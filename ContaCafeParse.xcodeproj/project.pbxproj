@@ -26,6 +26,7 @@
 		1B4B670D1C1634E400247198 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B670C1C1634E400247198 /* libsqlite3.tbd */; };
 		1B4B670F1C16354700247198 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B670E1C16354700247198 /* Accounts.framework */; };
 		1B4B67111C16355500247198 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B67101C16355500247198 /* Social.framework */; };
+		1B4B67141C16442200247198 /* Trabajador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B67131C16442200247198 /* Trabajador.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		1B4B670C1C1634E400247198 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1B4B670E1C16354700247198 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1B4B67101C16355500247198 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1B4B67131C16442200247198 /* Trabajador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trabajador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		1B4B66D71C162F3800247198 = {
 			isa = PBXGroup;
 			children = (
+				1B4B67121C16411600247198 /* Models */,
 				1B4B66F51C162F4400247198 /* Frameworks */,
 				1B4B66E21C162F3800247198 /* ContaCafeParse */,
 				1B4B66E11C162F3800247198 /* Products */,
@@ -126,6 +129,14 @@
 				1B4B66F61C1631FC00247198 /* Bolts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B4B67121C16411600247198 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B67131C16442200247198 /* Trabajador.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			files = (
 				1B4B66E61C162F3800247198 /* ViewController.swift in Sources */,
 				1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */,
+				1B4B67141C16442200247198 /* Trabajador.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
