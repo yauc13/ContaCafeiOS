@@ -24,6 +24,13 @@ struct Trabajador {
         
         self.nombre = nombre
         self.klu = klu
+        self.kma = kma
+        self.kmi = kmi
+        self.kju = kju
+        self.kvi = kvi
+        self.ksa = ksa
+        self.kdo = kdo
+        
         
     }
     
