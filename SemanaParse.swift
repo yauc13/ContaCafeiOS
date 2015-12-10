@@ -87,7 +87,12 @@ struct SemanaParse {
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
+                        var s:Semana = Semana()
+                        //s.nombreSemana = object[C_NAME_SEM]
                         print(object.objectId)
+                   s.nombreSemana = object.valueForKey(self.C_NAME_SEM) as! String
+                        data.append(s)
+                        
                     }
                 }
             } else {
@@ -95,7 +100,8 @@ struct SemanaParse {
                 print("Error: \(error!) \(error!.userInfo)")
             }
         }
-        
+        let tama:Int! = data.count
+        print("tamano: \(tama!)")
         
         return data
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class VerSemanaViewController: UIViewController, UITableViewDataSource {
 
@@ -17,10 +18,17 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        data = [Semana(nombreSemana: "Semana1")
-            , Semana(nombreSemana: "Semana2")
-            
-        ]
+       // let semanaParse:SemanaParse = SemanaParse()
+
+//        data = [Semana(nombreSemana: "Semana1")
+//            , Semana(nombreSemana: "Semana2")
+//            
+//        ]
+        
+//        data = semanaParse.getAllSemana()
+//        var nom:String!
+//        nom = data[0].nombreSemana
+//        print(nom)
 
         // Do any additional setup after loading the view.
     }
