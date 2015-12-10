@@ -1,73 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SwK-Nz-Djw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ivi-3h-F4s">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="IKV-j8-b8b">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="W7h-D3-vpQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CMb-Tz-gI1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SwK-Nz-Djw" kind="relationship" relationship="rootViewController" id="Aqe-3E-lDB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jo0-ra-3Am" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.5" y="-761"/>
+        </scene>
+        <!--Agregar Semana-->
+        <scene sceneID="Fgg-86-EL6">
+            <objects>
+                <viewController id="ivi-3h-F4s" customClass="AgregarSemanaViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="RJ9-Vw-Ktw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ItV-cj-9ua"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="kGe-69-JQb">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMJ-Sx-UdX">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Semana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nq-zv-cp6">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
-                                <state key="normal" title="Insumos"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="168" y="158" width="65" height="30"/>
+                                    <rect key="frame" x="13" y="97" width="241" height="21"/>
                                 </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYC-tw-EBm">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Semana" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFL-VW-YaV">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="182" y="221" width="46" height="30"/>
+                                    <rect key="frame" x="13" y="126" width="367" height="30"/>
                                 </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-EP-caf">
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-FK-4KF">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Semanas"/>
+                                <state key="normal" title="Agregar"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="157" y="97" width="86" height="30"/>
+                                    <rect key="frame" x="154" y="184" width="92" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="SwK-Nz-Djw" kind="show" identifier="goToSemana" id="8Qj-ri-Y8V"/>
+                                    <action selector="agregarSemana:" destination="ivi-3h-F4s" eventType="touchUpInside" id="msk-GB-fsK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="uMJ-Sx-UdX"/>
-                                <exclude reference="vYC-tw-EBm"/>
-                                <exclude reference="ZsT-EP-caf"/>
+                                <exclude reference="3nq-zv-cp6"/>
+                                <exclude reference="NFL-VW-YaV"/>
+                                <exclude reference="N2A-FK-4KF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="uMJ-Sx-UdX"/>
-                                <include reference="vYC-tw-EBm"/>
-                                <include reference="ZsT-EP-caf"/>
+                                <include reference="3nq-zv-cp6"/>
+                                <include reference="NFL-VW-YaV"/>
+                                <include reference="N2A-FK-4KF"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Agregar Semana" id="r8c-L6-n2L">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="ivg-Sz-hxq">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Ok" id="bRp-X8-9Ia">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="insertarSemana:" destination="ivi-3h-F4s" id="Oge-BM-OGq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nombreSemana" destination="NFL-VW-YaV" id="UCf-9O-mGn"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZtU-v5-kAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-75" y="-75"/>
+            <point key="canvasLocation" x="1411.5" y="-761"/>
         </scene>
-        <!--Ver Semana View Controller-->
+        <!--Semanas-->
         <scene sceneID="hdH-lj-AeK">
             <objects>
                 <viewController id="SwK-Nz-Djw" customClass="VerSemanaViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,6 +110,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7g1-b7-Cx5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7nk-HR-Wxc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pantalla 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXP-Dp-rwB">
@@ -97,6 +132,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NkP-Qj-fDA" id="PjB-fn-QwA">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Semana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYM-LF-9zH">
@@ -129,7 +165,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="20" width="365" height="560"/>
+                                    <rect key="frame" x="15" y="72" width="370" height="508"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="SwK-Nz-Djw" id="PEI-Lk-7AF"/>
@@ -151,13 +187,24 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Semanas" id="mzm-EK-b5E">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="Prj-5p-yp9">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Agregar" id="8As-X3-Tno">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="TablaSemana" destination="pf2-bR-t0W" id="C54-g7-KP8"/>
+                        <segue destination="ivi-3h-F4s" kind="show" id="4yE-PC-sHb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drT-LE-46H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="-297"/>
+            <point key="canvasLocation" x="576" y="-761"/>
         </scene>
     </scenes>
 </document>

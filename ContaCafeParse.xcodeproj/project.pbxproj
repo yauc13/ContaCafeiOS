@@ -10,6 +10,7 @@
 		1B32866B1C18741600D3C00D /* VerSemanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32866A1C18741600D3C00D /* VerSemanaViewController.swift */; };
 		1B32866D1C1882AA00D3C00D /* Semana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32866C1C1882AA00D3C00D /* Semana.swift */; };
 		1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32866F1C18877100D3C00D /* SemanaTableViewCell.swift */; };
+		1B3286731C1895EA00D3C00D /* SemanaParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3286721C1895EA00D3C00D /* SemanaParse.swift */; };
 		1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B66E31C162F3800247198 /* AppDelegate.swift */; };
 		1B4B66E61C162F3800247198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B66E51C162F3800247198 /* ViewController.swift */; };
 		1B4B66E91C162F3800247198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B66E71C162F3800247198 /* Main.storyboard */; };
@@ -30,12 +31,14 @@
 		1B4B670F1C16354700247198 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B670E1C16354700247198 /* Accounts.framework */; };
 		1B4B67111C16355500247198 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B67101C16355500247198 /* Social.framework */; };
 		1B4B67141C16442200247198 /* Trabajador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B67131C16442200247198 /* Trabajador.swift */; };
+		1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B32866A1C18741600D3C00D /* VerSemanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerSemanaViewController.swift; sourceTree = "<group>"; };
 		1B32866C1C1882AA00D3C00D /* Semana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semana.swift; sourceTree = "<group>"; };
 		1B32866F1C18877100D3C00D /* SemanaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaTableViewCell.swift; sourceTree = "<group>"; };
+		1B3286721C1895EA00D3C00D /* SemanaParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaParse.swift; sourceTree = "<group>"; };
 		1B4B66E01C162F3800247198 /* ContaCafeParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContaCafeParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4B66E31C162F3800247198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4B66E51C162F3800247198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		1B4B670E1C16354700247198 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1B4B67101C16355500247198 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1B4B67131C16442200247198 /* Trabajador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trabajador.swift; sourceTree = "<group>"; };
+		1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarSemanaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +97,18 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		1B3286711C1895CD00D3C00D /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				1B3286721C1895EA00D3C00D /* SemanaParse.swift */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
 		1B4B66D71C162F3800247198 = {
 			isa = PBXGroup;
 			children = (
+				1B3286711C1895CD00D3C00D /* Parse */,
 				1B32866E1C18870400D3C00D /* Cells */,
 				1B4B67121C16411600247198 /* Models */,
 				1B4B66F51C162F4400247198 /* Frameworks */,
@@ -122,6 +135,7 @@
 				1B4B66EC1C162F3800247198 /* LaunchScreen.storyboard */,
 				1B4B66EF1C162F3800247198 /* Info.plist */,
 				1B32866A1C18741600D3C00D /* VerSemanaViewController.swift */,
+				1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */,
 			);
 			path = ContaCafeParse;
 			sourceTree = "<group>";
@@ -229,6 +243,8 @@
 			files = (
 				1B32866D1C1882AA00D3C00D /* Semana.swift in Sources */,
 				1B4B66E61C162F3800247198 /* ViewController.swift in Sources */,
+				1B3286731C1895EA00D3C00D /* SemanaParse.swift in Sources */,
+				1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */,
 				1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */,
 				1B32866B1C18741600D3C00D /* VerSemanaViewController.swift in Sources */,
 				1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */,
