@@ -32,6 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ItV-cj-9ua"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kGe-69-JQb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Semana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nq-zv-cp6">

@@ -56,25 +56,10 @@ struct SemanaParse {
     
     
     func getAllSemana() -> [Semana]{
-//        let query = PFQuery(className:CLASS)
-//        var data:[Semana] = [Semana]()
-//        
-//        let listParseObject = query.findObjects()
-//        
-//        var parseObject: PFObject
-//        var semana: Semana
-//        
-//        
-//        let sizelist = listParseObject.count
-//       
-//        for row in listParseObject {
-//            var s:Semana = Semana()
-//            s.nombreSemana = row[C_NAME_SEM]
-//            
-//            data.append(s)
-//        }
+
         
         var data:[Semana] = [Semana]()
+        var dataSemana:[Semana] = [Semana]()
         
         let query = PFQuery(className:CLASS)
         //query.whereKey("playerName", equalTo:"Sean Plott")
@@ -87,11 +72,17 @@ struct SemanaParse {
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
-                        var s:Semana = Semana()
+                        
                         //s.nombreSemana = object[C_NAME_SEM]
                         print(object.objectId)
-                   s.nombreSemana = object.valueForKey(self.C_NAME_SEM) as! String
+                        let nomSem:String! = object.valueForKey(self.C_NAME_SEM) as! String
+                        print("nombre sema: \(nomSem!)")
+                        let s:Semana = Semana(nombreSemana: nomSem)
+                        print("nombre sema list: \(s.nombreSemana)")
+                        
                         data.append(s)
+                        let tama:Int! = data.count
+                        print("tamano for: \(tama!)")
                         
                     }
                 }
@@ -99,11 +90,19 @@ struct SemanaParse {
                 // Log details of the failure
                 print("Error: \(error!) \(error!.userInfo)")
             }
+            print("tamano en el metodo: \(data.count)")
+            
+            for i in data {
+                dataSemana.append(i)
+            }
+            print("tamano en el metodo sem: \(dataSemana.count)")
+            
+            
         }
-        let tama:Int! = data.count
-        print("tamano: \(tama!)")
         
-        return data
+        print("tamano fuera: \(data.count)")
+        print("tamano fuera sem: \(dataSemana.count)")
+        return dataSemana
     }
     
 
