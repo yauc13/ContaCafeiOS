@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ivi-3h-F4s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W7h-D3-vpQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -16,12 +16,12 @@
                         <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="SwK-Nz-Djw" kind="relationship" relationship="rootViewController" id="Aqe-3E-lDB"/>
+                        <segue destination="0lr-k6-xAJ" kind="relationship" relationship="rootViewController" id="XZi-6h-vd4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jo0-ra-3Am" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226.5" y="-761"/>
+            <point key="canvasLocation" x="-634.5" y="-817"/>
         </scene>
         <!--Agregar Semana-->
         <scene sceneID="Fgg-86-EL6">
@@ -83,15 +83,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Agregar Semana" id="r8c-L6-n2L">
-                        <barButtonItem key="backBarButtonItem" title="Atras" id="ivg-Sz-hxq">
+                    <navigationItem key="navigationItem" title="Agregar Semana" id="LZr-z0-IhI">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="mYd-bT-bhg">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Ok" id="bRp-X8-9Ia">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="insertarSemana:" destination="ivi-3h-F4s" id="Oge-BM-OGq"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -100,7 +94,248 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZtU-v5-kAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1411.5" y="-761"/>
+            <point key="canvasLocation" x="1980" y="-1233"/>
+        </scene>
+        <!--Agregar Insumo-->
+        <scene sceneID="bdZ-4E-5KV">
+            <objects>
+                <viewController title="Agregar Insumo" id="tTn-mx-Vbq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lzN-ps-NhK"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Qm-2O-Okt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PQC-UN-86h">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Insumo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adi-hX-99I">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="88" width="151" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Insumo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQm-AZ-5DC">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="134" width="321" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-rn-EvY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Agregar"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="207" width="86" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="adi-hX-99I"/>
+                                <exclude reference="jQm-AZ-5DC"/>
+                                <exclude reference="fFJ-rn-EvY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="adi-hX-99I"/>
+                                <include reference="jQm-AZ-5DC"/>
+                                <include reference="fFJ-rn-EvY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Agregar Insumo" id="maZ-vk-QNm">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="I0t-H0-5zN"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcI-2u-UKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="-547"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uj3-Wt-SYq">
+            <objects>
+                <viewController id="dUB-5y-udl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BPc-Ff-7E5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dfd-5E-Xes"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aEe-Gv-Crn">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKp-IQ-6O7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2974.5" y="-489"/>
+        </scene>
+        <!--Menu Principal-->
+        <scene sceneID="A52-i0-VhT">
+            <objects>
+                <viewController title="Menu Principal" id="0lr-k6-xAJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EOs-sF-QVN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nhi-si-lKu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GAC-3R-3le">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE1-Dr-1fQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Insumos"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="231" width="72" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="HM2-Ng-fLu" kind="show" id="ASD-nf-qDP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz6-Ui-BX2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Semanas"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="161" width="78" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="SwK-Nz-Djw" kind="show" id="Dqi-MN-l3x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LE1-Dr-1fQ"/>
+                                <exclude reference="tz6-Ui-BX2"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LE1-Dr-1fQ"/>
+                                <include reference="tz6-Ui-BX2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu Principal" id="6Kb-Fm-sZB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Md3-vE-7e1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154.5" y="-825"/>
+        </scene>
+        <!--Lista Insumos-->
+        <scene sceneID="WiG-xV-bqF">
+            <objects>
+                <viewController title="Lista Insumos" id="HM2-Ng-fLu" customClass="VerInsumoViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sne-2X-vzP"/>
+                        <viewControllerLayoutGuide type="bottom" id="rzy-ds-as3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8W-2p-1Dk">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FR0-q5-IB3">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaInsumo" rowHeight="101" id="JB7-Kd-44R" customClass="InsumoTableViewCell" customModule="ContaCafeParse" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JB7-Kd-44R" id="vsY-Tq-caY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Insumo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDw-QD-0XL">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="14" y="14" width="126" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-Cy-WlN">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="14" y="39" width="194" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="VDw-QD-0XL"/>
+                                                    <exclude reference="fv0-Cy-WlN"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="VDw-QD-0XL"/>
+                                                    <include reference="fv0-Cy-WlN"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="costoInsumo" destination="fv0-Cy-WlN" id="4tp-IF-NCF"/>
+                                            <outlet property="nombreInsumo" destination="VDw-QD-0XL" id="sWv-rD-20C"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="72" width="353" height="508"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="HM2-Ng-fLu" id="Ygu-3b-d1I"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FR0-q5-IB3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FR0-q5-IB3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lista Insumos" id="WPs-Hy-JeT">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="bvC-HC-tZx">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Agregar" id="rTc-Nw-bTI">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="tTn-mx-Vbq" kind="show" id="jds-Ix-iYr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TablaInsumo" destination="FR0-q5-IB3" id="g0q-6I-Yxb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vq6-Qg-Mrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030.5" y="-409"/>
         </scene>
         <!--Semanas-->
         <scene sceneID="hdH-lj-AeK">
@@ -143,7 +378,7 @@
                                                     <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="13" y="8" width="208" height="21"/>
+                                                        <rect key="frame" x="14" y="8" width="208" height="21"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
@@ -166,7 +401,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="72" width="370" height="508"/>
+                                    <rect key="frame" x="12" y="124" width="376" height="456"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="SwK-Nz-Djw" id="PEI-Lk-7AF"/>
@@ -195,17 +430,19 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Agregar" id="8As-X3-Tno">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ivi-3h-F4s" kind="show" id="AQ3-FH-Hrm"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="TablaSemana" destination="pf2-bR-t0W" id="C54-g7-KP8"/>
-                        <segue destination="ivi-3h-F4s" kind="show" id="4yE-PC-sHb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drT-LE-46H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="-761"/>
+            <point key="canvasLocation" x="1056" y="-1129"/>
         </scene>
     </scenes>
 </document>

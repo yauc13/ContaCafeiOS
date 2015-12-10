@@ -1,48 +1,36 @@
 //
-//  VerSemanaViewController.swift
+//  VerInsumoViewController.swift
 //  ContaCafeParse
 //
-//  Created by Aplimovil on 12/9/15.
+//  Created by Aplimovil on 12/10/15.
 //  Copyright © 2015 Aplimovil. All rights reserved.
 //
 
 import UIKit
-import Parse
 
-class VerSemanaViewController: UIViewController, UITableViewDataSource {
+class VerInsumoViewController: UIViewController, UITableViewDataSource {
 
-    @IBOutlet var TablaSemana: UITableView!
+    @IBOutlet var TablaInsumo: UITableView!
     
-    var data:[Semana]!
+    var data:[Insumo]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // let semanaParse:SemanaParse = SemanaParse()
-
         data = [Semana(nombreSemana: "Semana1")
-           , Semana(nombreSemana: "Semana2")
+            , Semana(nombreSemana: "Semana2")
         ]
-        
-//        data = semanaParse.getAllSemana()
-//        var nom:String!
-//        nom = data[0].nombreSemana
-//        print(nom)
 
         // Do any additional setup after loading the view.
-    }
-    
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     
- 
+    
     
     //metodos DataSource
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -57,21 +45,17 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
         
         //let cell: SemanaTableViewCell = tableView.dequeueReusableCellWithIdentifier("celda") as! SemanaTableViewCell
         
-        let cell: SemanaTableViewCell = tableView.dequeueReusableCellWithIdentifier("celda") as! SemanaTableViewCell
+        let cell: InsumoTableViewCell = tableView.dequeueReusableCellWithIdentifier("celdaInsumo") as! InsumoTableViewCell
         
         let pos = indexPath.row
         
         
-       // cell.nombreSemana.text = data[pos].nombreSemana
-       cell.nombreSemana.text = data[pos].nombreSemana
+        // cell.nombreSemana.text = data[pos].nombreSemana
+        cell.nombreInsumo.text = data[pos].nombreSemana
         
-         
+        
         return cell
     }
-    
-    
-    
-    
     
     
 

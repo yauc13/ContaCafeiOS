@@ -32,6 +32,8 @@
 		1B4B67111C16355500247198 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B67101C16355500247198 /* Social.framework */; };
 		1B4B67141C16442200247198 /* Trabajador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B67131C16442200247198 /* Trabajador.swift */; };
 		1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */; };
+		1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */; };
+		1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		1B4B67101C16355500247198 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1B4B67131C16442200247198 /* Trabajador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trabajador.swift; sourceTree = "<group>"; };
 		1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarSemanaViewController.swift; sourceTree = "<group>"; };
+		1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerInsumoViewController.swift; sourceTree = "<group>"; };
+		1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsumoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1B32866F1C18877100D3C00D /* SemanaTableViewCell.swift */,
+				1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				1B4B66EF1C162F3800247198 /* Info.plist */,
 				1B32866A1C18741600D3C00D /* VerSemanaViewController.swift */,
 				1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */,
+				1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */,
 			);
 			path = ContaCafeParse;
 			sourceTree = "<group>";
@@ -243,8 +249,10 @@
 			files = (
 				1B32866D1C1882AA00D3C00D /* Semana.swift in Sources */,
 				1B4B66E61C162F3800247198 /* ViewController.swift in Sources */,
+				1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */,
 				1B3286731C1895EA00D3C00D /* SemanaParse.swift in Sources */,
 				1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */,
+				1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */,
 				1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */,
 				1B32866B1C18741600D3C00D /* VerSemanaViewController.swift in Sources */,
 				1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */,
