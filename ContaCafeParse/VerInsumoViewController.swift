@@ -17,8 +17,8 @@ class VerInsumoViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        data = [Semana(nombreSemana: "Semana1")
-            , Semana(nombreSemana: "Semana2")
+        data = [Insumo(nombreInsumo: "Abono", costoInsumo: 30000)
+            , Insumo(nombreInsumo: "Cal", costoInsumo: 45000)
         ]
 
         // Do any additional setup after loading the view.
@@ -51,7 +51,8 @@ class VerInsumoViewController: UIViewController, UITableViewDataSource {
         
         
         // cell.nombreSemana.text = data[pos].nombreSemana
-        cell.nombreInsumo.text = data[pos].nombreSemana
+        cell.nombreInsumo.text = data[pos].nombreInsumo
+        cell.costoInsumo.text = data[pos].costoInsumo as? String
         
         
         return cell
