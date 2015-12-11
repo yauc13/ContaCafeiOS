@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -99,7 +100,7 @@
         <!--Agregar Insumo-->
         <scene sceneID="bdZ-4E-5KV">
             <objects>
-                <viewController title="Agregar Insumo" id="tTn-mx-Vbq" sceneMemberID="viewController">
+                <viewController title="Agregar Insumo" id="tTn-mx-Vbq" customClass="AgregarInsumoViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lzN-ps-NhK"/>
                         <viewControllerLayoutGuide type="bottom" id="5Qm-2O-Okt"/>
@@ -132,9 +133,28 @@
                                 <animations/>
                                 <state key="normal" title="Agregar"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="145" y="207" width="86" height="30"/>
+                                    <rect key="frame" x="145" y="266" width="86" height="30"/>
                                 </variation>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acA-3n-Fgl">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="184" width="352" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="precio del insumo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cos-8p-EgW">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="213" width="360" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,6 +163,8 @@
                                 <exclude reference="adi-hX-99I"/>
                                 <exclude reference="jQm-AZ-5DC"/>
                                 <exclude reference="fFJ-rn-EvY"/>
+                                <exclude reference="acA-3n-Fgl"/>
+                                <exclude reference="cos-8p-EgW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -150,16 +172,22 @@
                                 <include reference="adi-hX-99I"/>
                                 <include reference="jQm-AZ-5DC"/>
                                 <include reference="fFJ-rn-EvY"/>
+                                <include reference="acA-3n-Fgl"/>
+                                <include reference="cos-8p-EgW"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Agregar Insumo" id="maZ-vk-QNm">
                         <barButtonItem key="backBarButtonItem" title="Atras" id="I0t-H0-5zN"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nombreInsumo" destination="jQm-AZ-5DC" id="OnE-WJ-AHo"/>
+                        <outlet property="precioInsumo" destination="cos-8p-EgW" id="AYz-tW-2ZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GcI-2u-UKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="-547"/>
+            <point key="canvasLocation" x="1030.5" y="359"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Uj3-Wt-SYq">
@@ -266,9 +294,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="14" y="14" width="126" height="21"/>
-                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-Cy-WlN">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -276,22 +301,54 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="14" y="39" width="194" height="21"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="VDw-QD-0XL" firstAttribute="top" secondItem="vsY-Tq-caY" secondAttribute="topMargin" constant="2" id="1K3-OV-2ne"/>
+                                                <constraint firstItem="VDw-QD-0XL" firstAttribute="leading" secondItem="vsY-Tq-caY" secondAttribute="leadingMargin" constant="6" id="6hp-IJ-9uJ"/>
+                                                <constraint firstItem="VDw-QD-0XL" firstAttribute="leading" secondItem="vsY-Tq-caY" secondAttribute="leadingMargin" constant="6" id="9gi-q7-wQ2"/>
+                                                <constraint firstItem="fv0-Cy-WlN" firstAttribute="leading" secondItem="vsY-Tq-caY" secondAttribute="leadingMargin" constant="6" id="WKk-ie-Abu"/>
+                                                <constraint firstItem="fv0-Cy-WlN" firstAttribute="top" secondItem="VDw-QD-0XL" secondAttribute="bottom" constant="8" id="WPa-aj-ZrE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VDw-QD-0XL" secondAttribute="trailing" constant="7" id="cm6-EC-qD4"/>
+                                                <constraint firstItem="VDw-QD-0XL" firstAttribute="top" secondItem="vsY-Tq-caY" secondAttribute="topMargin" constant="6" id="jT5-wv-DnH">
+                                                    <variation key="widthClass=compact" constant="2"/>
+                                                </constraint>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VDw-QD-0XL" secondAttribute="trailing" constant="7" id="n8q-Oj-Ugk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fv0-Cy-WlN" secondAttribute="trailing" id="v0O-Mk-4GL"/>
+                                            </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="VDw-QD-0XL"/>
                                                     <exclude reference="fv0-Cy-WlN"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="1K3-OV-2ne"/>
+                                                    <exclude reference="6hp-IJ-9uJ"/>
+                                                    <exclude reference="9gi-q7-wQ2"/>
+                                                    <exclude reference="cm6-EC-qD4"/>
+                                                    <exclude reference="jT5-wv-DnH"/>
+                                                    <exclude reference="n8q-Oj-Ugk"/>
+                                                    <exclude reference="WKk-ie-Abu"/>
+                                                    <exclude reference="WPa-aj-ZrE"/>
+                                                    <exclude reference="v0O-Mk-4GL"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="VDw-QD-0XL"/>
                                                     <include reference="fv0-Cy-WlN"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="1K3-OV-2ne"/>
+                                                    <include reference="6hp-IJ-9uJ"/>
+                                                    <include reference="9gi-q7-wQ2"/>
+                                                    <include reference="cm6-EC-qD4"/>
+                                                    <include reference="jT5-wv-DnH"/>
+                                                    <include reference="n8q-Oj-Ugk"/>
+                                                    <include reference="WKk-ie-Abu"/>
+                                                    <include reference="WPa-aj-ZrE"/>
+                                                    <include reference="v0O-Mk-4GL"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -303,23 +360,62 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="72" width="353" height="508"/>
+                                    <rect key="frame" x="20" y="72" width="353" height="447"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="HM2-Ng-fLu" id="Ygu-3b-d1I"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQx-wm-tmX">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Agregar" id="9np-dS-m8p">
+                                        <connections>
+                                            <segue destination="tTn-mx-Vbq" kind="show" identifier="add" id="sov-qA-R7k"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Editar" id="7CI-MH-Wtz">
+                                        <connections>
+                                            <action selector="editarInsumo:" destination="HM2-Ng-fLu" id="Buu-1j-rhI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Eliminar" id="OYL-5l-MjF"/>
+                                </items>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="556" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qQx-wm-tmX" secondAttribute="trailing" constant="-20" id="02V-fm-L93"/>
+                            <constraint firstItem="qQx-wm-tmX" firstAttribute="leading" secondItem="b8W-2p-1Dk" secondAttribute="leadingMargin" constant="-20" id="fk5-aN-36K"/>
+                            <constraint firstItem="rzy-ds-as3" firstAttribute="top" secondItem="qQx-wm-tmX" secondAttribute="bottom" constant="26" id="hVQ-g0-mgP">
+                                <variation key="widthClass=compact" constant="3"/>
+                            </constraint>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="FR0-q5-IB3"/>
+                                <exclude reference="qQx-wm-tmX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="02V-fm-L93"/>
+                                <exclude reference="fk5-aN-36K"/>
+                                <exclude reference="hVQ-g0-mgP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="FR0-q5-IB3"/>
+                                <include reference="qQx-wm-tmX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="02V-fm-L93"/>
+                                <include reference="fk5-aN-36K"/>
+                                <include reference="hVQ-g0-mgP"/>
                             </mask>
                         </variation>
                     </view>
@@ -329,13 +425,11 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Agregar" id="rTc-Nw-bTI">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="tTn-mx-Vbq" kind="show" id="jds-Ix-iYr"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="TablaInsumo" destination="FR0-q5-IB3" id="g0q-6I-Yxb"/>
+                        <segue destination="tTn-mx-Vbq" kind="show" identifier="edit" id="2On-xb-haZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vq6-Qg-Mrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -450,4 +544,7 @@
             <point key="canvasLocation" x="1056" y="-1129"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2On-xb-haZ"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -17,11 +17,20 @@ class VerInsumoViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        data = [Insumo(nombreInsumo: "Abono", costoInsumo: 30000)
-            , Insumo(nombreInsumo: "Cal", costoInsumo: 45000)
-        ]
+        let semanaParse:InsumoParse = InsumoParse()
+        
+        data = []
+        
+        semanaParse.getAllInsumos(self)
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        TablaInsumo.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,11 +61,47 @@ class VerInsumoViewController: UIViewController, UITableViewDataSource {
         
         // cell.nombreSemana.text = data[pos].nombreSemana
         cell.nombreInsumo.text = data[pos].nombreInsumo
-        cell.costoInsumo.text = data[pos].costoInsumo as? String
+        cell.costoInsumo.text = "\(data[pos].costoInsumo)"
+
         
         
         return cell
     }
+    
+    
+    //accion de botones
+    
+    @IBAction func editarInsumo(sender: AnyObject) {
+        if(TablaInsumo.indexPathsForSelectedRows == nil){
+            self.showUnSelectedMessage("Editar Insumo")
+        }else{
+            performSegueWithIdentifier("edit", sender: nil)
+        }
+    }
+    
+    
+    
+    //funciones para la interacion entre botones y alertas
+    func showUnSelectedMessage (title:String){
+        let alert:UIAlertController = UIAlertController(title: title, message: "Seleccione Un Insumo", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let action:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        
+        alert.addAction(action)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let nextInsumo:AgregarInsumoViewController = segue.destinationViewController as! AgregarInsumoViewController
+        
+        if(segue.identifier == "edit"){
+            nextInsumo.pos = TablaInsumo.indexPathForSelectedRow?.row
+        }
+    }
+    
+    
+    
     
     
 
