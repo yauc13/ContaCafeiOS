@@ -11,6 +11,8 @@
 		1B32866D1C1882AA00D3C00D /* Semana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32866C1C1882AA00D3C00D /* Semana.swift */; };
 		1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32866F1C18877100D3C00D /* SemanaTableViewCell.swift */; };
 		1B3286731C1895EA00D3C00D /* SemanaParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3286721C1895EA00D3C00D /* SemanaParse.swift */; };
+		1B3C3FBE1C1B13520038C48A /* InsumoParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C3FBD1C1B13520038C48A /* InsumoParse.swift */; };
+		1B3C3FC01C1B136A0038C48A /* TrabajadorParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C3FBF1C1B136A0038C48A /* TrabajadorParse.swift */; };
 		1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B66E31C162F3800247198 /* AppDelegate.swift */; };
 		1B4B66E61C162F3800247198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B66E51C162F3800247198 /* ViewController.swift */; };
 		1B4B66E91C162F3800247198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B66E71C162F3800247198 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		1B32866C1C1882AA00D3C00D /* Semana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semana.swift; sourceTree = "<group>"; };
 		1B32866F1C18877100D3C00D /* SemanaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaTableViewCell.swift; sourceTree = "<group>"; };
 		1B3286721C1895EA00D3C00D /* SemanaParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaParse.swift; sourceTree = "<group>"; };
+		1B3C3FBD1C1B13520038C48A /* InsumoParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsumoParse.swift; sourceTree = "<group>"; };
+		1B3C3FBF1C1B136A0038C48A /* TrabajadorParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrabajadorParse.swift; sourceTree = "<group>"; };
 		1B4B66E01C162F3800247198 /* ContaCafeParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContaCafeParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4B66E31C162F3800247198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4B66E51C162F3800247198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				1B3286721C1895EA00D3C00D /* SemanaParse.swift */,
+				1B3C3FBD1C1B13520038C48A /* InsumoParse.swift */,
+				1B3C3FBF1C1B136A0038C48A /* TrabajadorParse.swift */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 				1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */,
 				1B32866B1C18741600D3C00D /* VerSemanaViewController.swift in Sources */,
 				1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */,
+				1B3C3FC01C1B136A0038C48A /* TrabajadorParse.swift in Sources */,
 				1B4B67141C16442200247198 /* Trabajador.swift in Sources */,
+				1B3C3FBE1C1B13520038C48A /* InsumoParse.swift in Sources */,
 				1BE814E21C1A384F009BCDBC /* Insumo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

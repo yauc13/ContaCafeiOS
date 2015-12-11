@@ -13,18 +13,18 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet var TablaSemana: UITableView!
     
+   
+    
     var data:[Semana]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // let semanaParse:SemanaParse = SemanaParse()
+    let semanaParse:SemanaParse = SemanaParse()
 
-        data = [Semana(nombreSemana: "Semana1")
-           , Semana(nombreSemana: "Semana2")
-        ]
+        data = []
         
-//        data = semanaParse.getAllSemana()
+     semanaParse.getAllSemana(self)
 //        var nom:String!
 //        nom = data[0].nombreSemana
 //        print(nom)
@@ -35,6 +35,7 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,10 @@ struct SemanaParse {
     let CLASS:String = "Semana"
     let C_NAME_SEM:String = "nom_semana"
     
+    
+    
+    
+    
     init(){
     
     }
@@ -55,11 +59,9 @@ struct SemanaParse {
     }
     
     
-    func getAllSemana() -> [Semana]{
+    func getAllSemana(list:VerSemanaViewController) -> Void{
 
-        
-        var data:[Semana] = [Semana]()
-        var dataSemana:[Semana] = [Semana]()
+       
         
         let query = PFQuery(className:CLASS)
         //query.whereKey("playerName", equalTo:"Sean Plott")
@@ -80,8 +82,8 @@ struct SemanaParse {
                         let s:Semana = Semana(nombreSemana: nomSem)
                         print("nombre sema list: \(s.nombreSemana)")
                         
-                        data.append(s)
-                        let tama:Int! = data.count
+                        list.data.append(s)
+                        let tama:Int! = list.data.count
                         print("tamano for: \(tama!)")
                         
                     }
@@ -90,19 +92,15 @@ struct SemanaParse {
                 // Log details of the failure
                 print("Error: \(error!) \(error!.userInfo)")
             }
-            print("tamano en el metodo: \(data.count)")
-            
-            for i in data {
-                dataSemana.append(i)
-            }
-            print("tamano en el metodo sem: \(dataSemana.count)")
-            
+            print("tamano en el metodo: \(list.data.count)")
+           
+            list.TablaSemana.reloadData()
             
         }
         
-        print("tamano fuera: \(data.count)")
-        print("tamano fuera sem: \(dataSemana.count)")
-        return dataSemana
+        //print("tamano fuera: \(list.data.count)")
+       
+        
     }
     
 
