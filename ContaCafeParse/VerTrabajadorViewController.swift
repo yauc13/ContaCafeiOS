@@ -14,7 +14,7 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var TablaTrabajador: UITableView!
    
-    
+    var idSemaView:String!
     var data:[Trabajador]!
     
     override func viewDidLoad() {
@@ -33,6 +33,12 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // acciones de los botones
+    
+    
+    
     
     //metodos DataSource
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

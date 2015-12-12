@@ -46,6 +46,9 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
     
     //metodos de accion de los botones
     
+    
+    
+    
     @IBAction func insertarSemana(sender: AnyObject) {
         if(TablaSemana.indexPathsForSelectedRows == nil){
             self.showUnSelectedMessage("Editar Semana")
@@ -53,6 +56,19 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
             performSegueWithIdentifier("edit", sender: nil)
         }
     }
+    
+    
+    
+    
+    @IBAction func mostrarTrabajadores(sender: AnyObject) {
+        if(TablaSemana.indexPathsForSelectedRows == nil){
+            self.showUnSelectedMessage("Ver Trabajadores de la Semana")
+        }else{
+            performSegueWithIdentifier("goToListaTrabajador", sender: nil)
+        }
+    }
+    
+    
     
     //funciones para la interacion entre botones y alertas
     func showUnSelectedMessage (title:String){
@@ -66,11 +82,19 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let nextInsumo:AgregarSemanaViewController = segue.destinationViewController as! AgregarSemanaViewController
+        
+        
         
         if(segue.identifier == "edit"){
+            let nextInsumo:AgregarSemanaViewController = segue.destinationViewController as! AgregarSemanaViewController
             nextInsumo.pos = TablaSemana.indexPathForSelectedRow?.row
             nextInsumo.list = self
+        }else if(segue.identifier == "goToListaTrabajador"){
+            let nextTrabajador:VerTrabajadorViewController = segue.destinationViewController as! VerTrabajadorViewController
+            let pos:Int! = TablaSemana.indexPathForSelectedRow?.row
+            let idSe:String! = data[pos!].idSemana
+            nextTrabajador.idSemaView = idSe
+            //nextInsumo.list = self
         }
     }
     

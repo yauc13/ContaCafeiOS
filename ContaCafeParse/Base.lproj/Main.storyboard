@@ -513,7 +513,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Eliminar" id="3MD-ex-fT2"/>
-                                    <barButtonItem title="Ver Trabajadores" id="3PQ-ZS-fba"/>
+                                    <barButtonItem title="Ver Trabajadores" id="3PQ-ZS-fba">
+                                        <connections>
+                                            <action selector="mostrarTrabajadores:" destination="SwK-Nz-Djw" id="iul-00-B9I"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="516" width="400" height="44"/>

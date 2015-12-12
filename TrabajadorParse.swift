@@ -87,7 +87,7 @@ struct TrabajadorParse {
     func getAllTrabajador(list:VerTrabajadorViewController) -> Void{
 
         let query = PFQuery(className:CLASS)
-        //query.whereKey("playerName", equalTo:"Sean Plott")
+        query.whereKey(C_IDSEMANA, equalTo:list.idSemaView)
         query.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
             
