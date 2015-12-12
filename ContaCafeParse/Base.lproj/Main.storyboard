@@ -467,6 +467,17 @@
                                     <segue destination="SwK-Nz-Djw" kind="show" id="Dqi-MN-l3x"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e90-yz-pfS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Mapa"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="302" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="Wsh-1m-5Ri" kind="show" id="9DS-Nj-A3c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -474,12 +485,14 @@
                             <mask key="subviews">
                                 <exclude reference="LE1-Dr-1fQ"/>
                                 <exclude reference="tz6-Ui-BX2"/>
+                                <exclude reference="e90-yz-pfS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="LE1-Dr-1fQ"/>
                                 <include reference="tz6-Ui-BX2"/>
+                                <include reference="e90-yz-pfS"/>
                             </mask>
                         </variation>
                     </view>
@@ -488,6 +501,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Md3-vE-7e1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="154.5" y="-825"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="2HF-cA-sDV">
+            <objects>
+                <viewController id="Wsh-1m-5Ri" customClass="MapViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e9U-sW-wQ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="GrA-3r-ulg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JfE-80-dsR">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tN9-1X-Ctv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="536"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tN9-1X-Ctv" firstAttribute="leading" secondItem="JfE-80-dsR" secondAttribute="leadingMargin" id="0V9-3p-0H3"/>
+                            <constraint firstItem="tN9-1X-Ctv" firstAttribute="top" secondItem="e9U-sW-wQ8" secondAttribute="bottom" id="Fjf-aW-isS"/>
+                            <constraint firstItem="GrA-3r-ulg" firstAttribute="top" secondItem="tN9-1X-Ctv" secondAttribute="bottom" id="a7I-70-VAQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tN9-1X-Ctv" secondAttribute="trailing" id="sVs-ch-sup"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tN9-1X-Ctv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0V9-3p-0H3"/>
+                                <exclude reference="Fjf-aW-isS"/>
+                                <exclude reference="sVs-ch-sup"/>
+                                <exclude reference="a7I-70-VAQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tN9-1X-Ctv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0V9-3p-0H3"/>
+                                <include reference="Fjf-aW-isS"/>
+                                <include reference="sVs-ch-sup"/>
+                                <include reference="a7I-70-VAQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="Map" destination="tN9-1X-Ctv" id="ido-tc-Nas"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Yd-ua-ese" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154.5" y="-156"/>
         </scene>
         <!--Lista Insumos-->
         <scene sceneID="WiG-xV-bqF">
