@@ -30,7 +30,7 @@ class VerInsumoViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        TablaInsumo.reloadData()
+        //TablaInsumo.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

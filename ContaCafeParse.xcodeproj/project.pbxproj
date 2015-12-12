@@ -16,7 +16,6 @@
 		1B3C3FC21C1B38860038C48A /* AgregarInsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C3FC11C1B38860038C48A /* AgregarInsumoViewController.swift */; };
 		1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B66E31C162F3800247198 /* AppDelegate.swift */; };
 		1B4B66E61C162F3800247198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B66E51C162F3800247198 /* ViewController.swift */; };
-		1B4B66E91C162F3800247198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B66E71C162F3800247198 /* Main.storyboard */; };
 		1B4B66EB1C162F3800247198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B66EA1C162F3800247198 /* Assets.xcassets */; };
 		1B4B66EE1C162F3800247198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B66EC1C162F3800247198 /* LaunchScreen.storyboard */; };
 		1B4B66F71C1631FC00247198 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B66F61C1631FC00247198 /* Bolts.framework */; };
@@ -34,7 +33,10 @@
 		1B4B670F1C16354700247198 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B670E1C16354700247198 /* Accounts.framework */; };
 		1B4B67111C16355500247198 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B67101C16355500247198 /* Social.framework */; };
 		1B4B67141C16442200247198 /* Trabajador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B67131C16442200247198 /* Trabajador.swift */; };
+		1B5AAAE31C1C99E300521539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AAAE11C1C99E300521539 /* Main.storyboard */; };
 		1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */; };
+		1BAE84A81C1C818100B4789A /* VerTrabajadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE84A71C1C818100B4789A /* VerTrabajadorViewController.swift */; };
+		1BAE84AA1C1C81DF00B4789A /* TrabajadorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE84A91C1C81DF00B4789A /* TrabajadorTableViewCell.swift */; };
 		1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */; };
 		1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */; };
 		1BE814E21C1A384F009BCDBC /* Insumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814E11C1A384F009BCDBC /* Insumo.swift */; };
@@ -51,7 +53,6 @@
 		1B4B66E01C162F3800247198 /* ContaCafeParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContaCafeParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4B66E31C162F3800247198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4B66E51C162F3800247198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B4B66E81C162F3800247198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B4B66EA1C162F3800247198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4B66ED1C162F3800247198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4B66EF1C162F3800247198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,7 +71,10 @@
 		1B4B670E1C16354700247198 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1B4B67101C16355500247198 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1B4B67131C16442200247198 /* Trabajador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trabajador.swift; sourceTree = "<group>"; };
+		1B5AAAE21C1C99E300521539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarSemanaViewController.swift; sourceTree = "<group>"; };
+		1BAE84A71C1C818100B4789A /* VerTrabajadorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerTrabajadorViewController.swift; sourceTree = "<group>"; };
+		1BAE84A91C1C81DF00B4789A /* TrabajadorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrabajadorTableViewCell.swift; sourceTree = "<group>"; };
 		1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerInsumoViewController.swift; sourceTree = "<group>"; };
 		1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsumoTableViewCell.swift; sourceTree = "<group>"; };
 		1BE814E11C1A384F009BCDBC /* Insumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insumo.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			children = (
 				1B32866F1C18877100D3C00D /* SemanaTableViewCell.swift */,
 				1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */,
+				1BAE84A91C1C81DF00B4789A /* TrabajadorTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -145,14 +150,15 @@
 			children = (
 				1B4B66E31C162F3800247198 /* AppDelegate.swift */,
 				1B4B66E51C162F3800247198 /* ViewController.swift */,
-				1B4B66E71C162F3800247198 /* Main.storyboard */,
 				1B4B66EA1C162F3800247198 /* Assets.xcassets */,
 				1B4B66EC1C162F3800247198 /* LaunchScreen.storyboard */,
+				1B5AAAE11C1C99E300521539 /* Main.storyboard */,
 				1B4B66EF1C162F3800247198 /* Info.plist */,
 				1B32866A1C18741600D3C00D /* VerSemanaViewController.swift */,
 				1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */,
 				1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */,
 				1B3C3FC11C1B38860038C48A /* AgregarInsumoViewController.swift */,
+				1BAE84A71C1C818100B4789A /* VerTrabajadorViewController.swift */,
 			);
 			path = ContaCafeParse;
 			sourceTree = "<group>";
@@ -246,9 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5AAAE31C1C99E300521539 /* Main.storyboard in Resources */,
 				1B4B66EE1C162F3800247198 /* LaunchScreen.storyboard in Resources */,
 				1B4B66EB1C162F3800247198 /* Assets.xcassets in Resources */,
-				1B4B66E91C162F3800247198 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +270,8 @@
 				1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */,
 				1B3286731C1895EA00D3C00D /* SemanaParse.swift in Sources */,
 				1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */,
+				1BAE84AA1C1C81DF00B4789A /* TrabajadorTableViewCell.swift in Sources */,
+				1BAE84A81C1C818100B4789A /* VerTrabajadorViewController.swift in Sources */,
 				1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */,
 				1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */,
 				1B3C3FC21C1B38860038C48A /* AgregarInsumoViewController.swift in Sources */,
@@ -279,20 +287,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B4B66E71C162F3800247198 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B4B66E81C162F3800247198 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B4B66EC1C162F3800247198 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1B4B66ED1C162F3800247198 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1B5AAAE11C1C99E300521539 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B5AAAE21C1C99E300521539 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
