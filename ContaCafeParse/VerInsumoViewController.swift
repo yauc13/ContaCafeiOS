@@ -97,6 +97,7 @@ class VerInsumoViewController: UIViewController, UITableViewDataSource {
         
         if(segue.identifier == "edit"){
             nextInsumo.pos = TablaInsumo.indexPathForSelectedRow?.row
+            nextInsumo.list = self
         }
     }
     

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -95,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZtU-v5-kAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="-1233"/>
+            <point key="canvasLocation" x="1804.5" y="-1134"/>
         </scene>
         <!--Agregar Insumo-->
         <scene sceneID="bdZ-4E-5KV">
@@ -128,14 +129,6 @@
                                     <rect key="frame" x="28" y="134" width="321" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-rn-EvY">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Agregar"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="145" y="266" width="86" height="30"/>
-                                </variation>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acA-3n-Fgl">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
@@ -155,6 +148,17 @@
                                     <rect key="frame" x="20" y="213" width="360" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-rn-EvY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Agregar"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="266" width="86" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="agregarInsumo:" destination="tTn-mx-Vbq" eventType="touchUpInside" id="eXc-qU-Xtr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,18 +166,18 @@
                             <mask key="subviews">
                                 <exclude reference="adi-hX-99I"/>
                                 <exclude reference="jQm-AZ-5DC"/>
-                                <exclude reference="fFJ-rn-EvY"/>
                                 <exclude reference="acA-3n-Fgl"/>
                                 <exclude reference="cos-8p-EgW"/>
+                                <exclude reference="fFJ-rn-EvY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="adi-hX-99I"/>
                                 <include reference="jQm-AZ-5DC"/>
-                                <include reference="fFJ-rn-EvY"/>
                                 <include reference="acA-3n-Fgl"/>
                                 <include reference="cos-8p-EgW"/>
+                                <include reference="fFJ-rn-EvY"/>
                             </mask>
                         </variation>
                     </view>
@@ -181,6 +185,7 @@
                         <barButtonItem key="backBarButtonItem" title="Atras" id="I0t-H0-5zN"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="botonAgregar" destination="fFJ-rn-EvY" id="bAT-j8-WRJ"/>
                         <outlet property="nombreInsumo" destination="jQm-AZ-5DC" id="OnE-WJ-AHo"/>
                         <outlet property="precioInsumo" destination="cos-8p-EgW" id="AYz-tW-2ZX"/>
                     </connections>
@@ -372,7 +377,7 @@
                                 <items>
                                     <barButtonItem title="Agregar" id="9np-dS-m8p">
                                         <connections>
-                                            <segue destination="tTn-mx-Vbq" kind="show" identifier="add" id="sov-qA-R7k"/>
+                                            <segue destination="tTn-mx-Vbq" kind="show" identifier="add" id="RFa-uh-pY8"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Editar" id="7CI-MH-Wtz">
@@ -382,9 +387,6 @@
                                     </barButtonItem>
                                     <barButtonItem title="Eliminar" id="OYL-5l-MjF"/>
                                 </items>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="556" width="400" height="44"/>
-                                </variation>
                             </toolbar>
                         </subviews>
                         <animations/>
@@ -402,9 +404,9 @@
                                 <exclude reference="qQx-wm-tmX"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="hVQ-g0-mgP"/>
                                 <exclude reference="02V-fm-L93"/>
                                 <exclude reference="fk5-aN-36K"/>
-                                <exclude reference="hVQ-g0-mgP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -413,9 +415,9 @@
                                 <include reference="qQx-wm-tmX"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="hVQ-g0-mgP"/>
                                 <include reference="02V-fm-L93"/>
                                 <include reference="fk5-aN-36K"/>
-                                <include reference="hVQ-g0-mgP"/>
                             </mask>
                         </variation>
                     </view>
@@ -434,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vq6-Qg-Mrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030.5" y="-409"/>
+            <point key="canvasLocation" x="1030.5" y="-425"/>
         </scene>
         <!--Semanas-->
         <scene sceneID="hdH-lj-AeK">
@@ -448,26 +450,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pantalla 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXP-Dp-rwB">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="159" y="-1" width="98" height="21"/>
-                                </variation>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-bR-t0W">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-bR-t0W">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" rowHeight="69" id="NkP-Qj-fDA" customClass="SemanaTableViewCell" customModule="ContaCafeParse" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" rowHeight="47" id="NkP-Qj-fDA" customClass="SemanaTableViewCell" customModule="ContaCafeParse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NkP-Qj-fDA" id="PjB-fn-QwA">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="68"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Semana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYM-LF-9zH">
@@ -500,25 +492,45 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="12" y="124" width="376" height="456"/>
+                                    <rect key="frame" x="20" y="84" width="376" height="432"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="SwK-Nz-Djw" id="PEI-Lk-7AF"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXq-Qn-ywS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Agregar" id="1ht-lL-6rr">
+                                        <connections>
+                                            <segue destination="ivi-3h-F4s" kind="show" identifier="add" id="Qx2-Df-odH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Editar" id="tGV-zv-nPo">
+                                        <connections>
+                                            <action selector="insertarSemana:" destination="SwK-Nz-Djw" id="XL4-JL-N8v"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Eliminar" id="3MD-ex-fT2"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="516" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="fXP-Dp-rwB"/>
                                 <exclude reference="pf2-bR-t0W"/>
+                                <exclude reference="wXq-Qn-ywS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="fXP-Dp-rwB"/>
                                 <include reference="pf2-bR-t0W"/>
+                                <include reference="wXq-Qn-ywS"/>
                             </mask>
                         </variation>
                     </view>
@@ -529,14 +541,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Agregar" id="8As-X3-Tno">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="ivi-3h-F4s" kind="show" id="AQ3-FH-Hrm"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="TablaSemana" destination="pf2-bR-t0W" id="C54-g7-KP8"/>
+                        <segue destination="ivi-3h-F4s" kind="show" identifier="edit" id="okV-7d-YXg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drT-LE-46H" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -545,6 +555,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2On-xb-haZ"/>
+        <segue reference="RFa-uh-pY8"/>
+        <segue reference="okV-7d-YXg"/>
     </inferredMetricsTieBreakers>
 </document>

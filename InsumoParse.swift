@@ -21,6 +21,47 @@ struct InsumoParse {
     init(){
         
     }
+    
+    
+    func insertInsumo(insumo:Insumo){
+        //PFObject parseObject= new PFObject(CLASS);
+        let parseObject = PFObject(className:CLASS)
+        parseInsumo(parseObject, insumo: insumo)
+        //parseObject.saveInBackground(this);
+        parseObject.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+        }
+        
+    }
+    
+    
+    func parseInsumo(parseObject:PFObject, insumo:Insumo){
+        parseObject[C_NAME_INS] = insumo.nombreInsumo
+        parseObject[C_COST_INS] = insumo.costoInsumo
+        
+    }
+    
+    func updateInsumo(insumo:Insumo){
+        //ParseQuery<ParseObject> query = ParseQuery.getQuery(CLASS);
+        let query = PFQuery(className:CLASS)
+        query.getObjectInBackgroundWithId(insumo.idInsumo) {
+            (parseObject: PFObject?, error: NSError?) -> Void in
+            if error != nil {
+                print(error)
+            } else if let parseObject = parseObject {
+                parseObject[self.C_NAME_INS] = insumo.nombreInsumo
+                parseObject[self.C_COST_INS] = insumo.costoInsumo
+                parseObject.saveInBackground()
+            }
+        }
+    }
+
+    
 
 func getAllInsumos(list:VerInsumoViewController) -> Void{
     
@@ -41,10 +82,10 @@ func getAllInsumos(list:VerInsumoViewController) -> Void{
                     //s.nombreSemana = object[C_NAME_SEM]
                     print(object.objectId)
                     let nomIns:String! = object.valueForKey(self.C_NAME_INS) as! String
-                    
+                    let idIns:String! = object.objectId
                     let cosIns:Int! = object.valueForKey(self.C_COST_INS) as! Int
                     
-                    let s:Insumo = Insumo(nombreInsumo: nomIns, costoInsumo: cosIns)
+                    let s:Insumo = Insumo(nombreInsumo: nomIns, costoInsumo: cosIns, idInsumo: idIns)
                     
                     list.data.append(s)
                                         

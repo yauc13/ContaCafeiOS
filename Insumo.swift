@@ -11,6 +11,7 @@ import Foundation
 struct Insumo {
     var nombreInsumo:String!
     var costoInsumo:Int!
+    var idInsumo:String!
     
     init (){
         
@@ -19,5 +20,11 @@ struct Insumo {
     init (nombreInsumo:String, costoInsumo:Int){
         self.nombreInsumo = nombreInsumo
         self.costoInsumo = costoInsumo
+    }
+    
+    init (nombreInsumo:String, costoInsumo:Int, idInsumo:String!){
+        self.nombreInsumo = nombreInsumo
+        self.costoInsumo = costoInsumo
+        self.idInsumo = idInsumo
     }
 }

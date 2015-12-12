@@ -47,7 +47,7 @@ struct SemanaParse {
     func updateSemana(semana:Semana){
         //ParseQuery<ParseObject> query = ParseQuery.getQuery(CLASS);
         let query = PFQuery(className:CLASS)
-        query.getObjectInBackgroundWithId("xWMyZEGZ") {
+        query.getObjectInBackgroundWithId(semana.idSemana) {
             (parseObject: PFObject?, error: NSError?) -> Void in
             if error != nil {
                 print(error)
@@ -78,8 +78,9 @@ struct SemanaParse {
                         //s.nombreSemana = object[C_NAME_SEM]
                         print(object.objectId)
                         let nomSem:String! = object.valueForKey(self.C_NAME_SEM) as! String
+                        let idSem:String! = object.objectId
                         print("nombre sema: \(nomSem!)")
-                        let s:Semana = Semana(nombreSemana: nomSem)
+                        let s:Semana = Semana(nombreSemana: nomSem, idSemana: idSem)
                         print("nombre sema list: \(s.nombreSemana)")
                         
                         list.data.append(s)

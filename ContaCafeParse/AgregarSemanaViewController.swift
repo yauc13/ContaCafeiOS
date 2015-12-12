@@ -12,8 +12,23 @@ class AgregarSemanaViewController: UIViewController {
 
     @IBOutlet var nombreSemana: UITextField!
     
+    var list:VerSemanaViewController!
+    var pos:Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //print("--posicion: \(pos!)")
+        if(pos != nil){
+            self.title = "Editar"
+            //print("nombre insu: \(list.data[pos].nombreInsumo)")
+            nombreSemana.text = list.data[pos!].nombreSemana
+            
+            
+        }else{
+            self.title = "Agregar"
+            
+            
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -35,10 +50,27 @@ class AgregarSemanaViewController: UIViewController {
     
     
     @IBAction func agregarSemana(sender: AnyObject) {
+        
         let semanaParse:SemanaParse = SemanaParse()
-        var semana:Semana = Semana()
-        semana.nombreSemana = nombreSemana.text
-        semanaParse.insertSemana(semana)
+        
+        //let insumoParse:InsumoParse = InsumoParse()
+        
+        
+        
+        if(pos != nil){
+            //actualizar semana
+            list.data[pos!].nombreSemana = nombreSemana.text
+            semanaParse.updateSemana(list.data[pos!])
+            
+        }else{
+            //crear nuevo
+            
+            var semana:Semana = Semana()
+            semana.nombreSemana = nombreSemana.text
+            semanaParse.insertSemana(semana)
+            
+           
+        }
         
         
         

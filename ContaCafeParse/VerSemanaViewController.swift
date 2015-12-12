@@ -43,6 +43,39 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //metodos de accion de los botones
+    
+    @IBAction func insertarSemana(sender: AnyObject) {
+        if(TablaSemana.indexPathsForSelectedRows == nil){
+            self.showUnSelectedMessage("Editar Semana")
+        }else{
+            performSegueWithIdentifier("edit", sender: nil)
+        }
+    }
+    
+    //funciones para la interacion entre botones y alertas
+    func showUnSelectedMessage (title:String){
+        let alert:UIAlertController = UIAlertController(title: title, message: "Seleccione Una Semana", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let action:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        
+        alert.addAction(action)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let nextInsumo:AgregarSemanaViewController = segue.destinationViewController as! AgregarSemanaViewController
+        
+        if(segue.identifier == "edit"){
+            nextInsumo.pos = TablaSemana.indexPathForSelectedRow?.row
+            nextInsumo.list = self
+        }
+    }
+    
+
+    
  
     
     //metodos DataSource

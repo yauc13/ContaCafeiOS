@@ -10,6 +10,7 @@ import Foundation
 
 struct Semana {
     var nombreSemana:String!
+    var idSemana:String!
     
     init (){
     
@@ -18,4 +19,11 @@ struct Semana {
     init (nombreSemana:String){
         self.nombreSemana = nombreSemana
     }
+    
+    
+    init (nombreSemana:String, idSemana:String){
+        self.nombreSemana = nombreSemana
+        self.idSemana = idSemana
+    }
+    
 }
