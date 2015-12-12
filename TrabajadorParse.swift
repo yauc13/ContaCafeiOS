@@ -60,7 +60,7 @@ struct TrabajadorParse {
         
     }
     
-    func updateInsumo(trabajador:Trabajador){
+    func updateTrabajador(trabajador:Trabajador){
         //ParseQuery<ParseObject> query = ParseQuery.getQuery(CLASS);
         let query = PFQuery(className:CLASS)
         query.getObjectInBackgroundWithId(trabajador.idTrabajador) {
@@ -122,7 +122,7 @@ struct TrabajadorParse {
                 print("Error: \(error!) \(error!.userInfo)")
             }
             print("tamano en el metodo: \(list.data.count)")
-            
+            //list.idSemaView = list.idSemaView
             list.TablaTrabajador.reloadData()
             
         }

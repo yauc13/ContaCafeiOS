@@ -38,6 +38,47 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
     // acciones de los botones
     
     
+    @IBAction func agregarTrabajador(sender: AnyObject) {
+        if(TablaTrabajador.indexPathsForSelectedRows == nil){
+            self.showUnSelectedMessage("Editar Trabajador")
+        }else{
+            performSegueWithIdentifier("edit", sender: nil)
+        }
+    }
+    
+    
+    //funciones para la interacion entre botones y alertas
+    func showUnSelectedMessage (title:String){
+        let alert:UIAlertController = UIAlertController(title: title, message: "Seleccione Un Trabajador", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let action:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        
+        alert.addAction(action)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        if(segue.identifier == "edit"){
+            let nextInsumo:AgregarTrabajadorViewController = segue.destinationViewController as! AgregarTrabajadorViewController
+            nextInsumo.pos = TablaTrabajador.indexPathForSelectedRow?.row
+            print("id que se envia\(idSemaView)")
+            nextInsumo.idSemanaAgregar = self.idSemaView
+            nextInsumo.list = self
+        }else if(segue.identifier == "add"){
+            let nextTrabajador:AgregarTrabajadorViewController = segue.destinationViewController as! AgregarTrabajadorViewController
+            nextTrabajador.idSemanaAgregar = self.idSemaView
+            //nextInsumo.list = self
+        }
+        
+        
+    }
+    
+    
+    
+
+    
     
     
     //metodos DataSource
@@ -68,6 +109,8 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
 
         return cell
     }
+    
+    
     
 
     

@@ -194,10 +194,10 @@
             </objects>
             <point key="canvasLocation" x="1030.5" y="359"/>
         </scene>
-        <!--View Controller-->
+        <!--AgregarTrabajador-->
         <scene sceneID="Uj3-Wt-SYq">
             <objects>
-                <viewController id="dUB-5y-udl" sceneMemberID="viewController">
+                <viewController title="AgregarTrabajador" id="dUB-5y-udl" customClass="AgregarTrabajadorViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BPc-Ff-7E5"/>
                         <viewControllerLayoutGuide type="bottom" id="Dfd-5E-Xes"/>
@@ -205,13 +205,233 @@
                     <view key="view" contentMode="scaleToFill" id="aEe-Gv-Crn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Lu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcQ-BF-a49">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="72" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gka-01-AgR">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="152" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Ju" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jma-2m-qaC">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="193" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Vi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70k-1R-3ol">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="227" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Sa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BO7-QT-I8c">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="262" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isU-Oo-oBs">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="299" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-An-4Sp">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="72" width="283" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-FA-Qd4">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="110" width="283" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Ma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncu-da-LoM">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="110" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-cP-4oI">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="148" width="283" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-Wq-2g4">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="186" width="283" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beh-Wt-gSl">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="223" width="283" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-vm-U9n">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="262" width="283" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dsu-TS-9ns">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="300" width="283" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaB-2a-rzs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Aceptar"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="372" width="91" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="agregarTrabajador:" destination="dUB-5y-udl" eventType="touchUpInside" id="KQ6-qg-vCM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41b-cJ-B19">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="344" width="69" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-No-G5K">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="341" width="137" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="wcQ-BF-a49"/>
+                                <exclude reference="Gka-01-AgR"/>
+                                <exclude reference="Jma-2m-qaC"/>
+                                <exclude reference="70k-1R-3ol"/>
+                                <exclude reference="BO7-QT-I8c"/>
+                                <exclude reference="isU-Oo-oBs"/>
+                                <exclude reference="n4S-An-4Sp"/>
+                                <exclude reference="Rxz-FA-Qd4"/>
+                                <exclude reference="ncu-da-LoM"/>
+                                <exclude reference="gzc-cP-4oI"/>
+                                <exclude reference="Cf5-Wq-2g4"/>
+                                <exclude reference="beh-Wt-gSl"/>
+                                <exclude reference="k7w-vm-U9n"/>
+                                <exclude reference="Dsu-TS-9ns"/>
+                                <exclude reference="TaB-2a-rzs"/>
+                                <exclude reference="41b-cJ-B19"/>
+                                <exclude reference="OJG-No-G5K"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="wcQ-BF-a49"/>
+                                <include reference="Gka-01-AgR"/>
+                                <include reference="Jma-2m-qaC"/>
+                                <include reference="70k-1R-3ol"/>
+                                <include reference="BO7-QT-I8c"/>
+                                <include reference="isU-Oo-oBs"/>
+                                <include reference="n4S-An-4Sp"/>
+                                <include reference="Rxz-FA-Qd4"/>
+                                <include reference="ncu-da-LoM"/>
+                                <include reference="gzc-cP-4oI"/>
+                                <include reference="Cf5-Wq-2g4"/>
+                                <include reference="beh-Wt-gSl"/>
+                                <include reference="k7w-vm-U9n"/>
+                                <include reference="Dsu-TS-9ns"/>
+                                <include reference="TaB-2a-rzs"/>
+                                <include reference="41b-cJ-B19"/>
+                                <include reference="OJG-No-G5K"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Agregar Trabajador" id="ID2-LJ-Pgc">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="EbM-8B-xB5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="kdo" destination="Dsu-TS-9ns" id="8cv-iy-ZZi"/>
+                        <outlet property="kju" destination="Cf5-Wq-2g4" id="6lW-A8-GrN"/>
+                        <outlet property="klu" destination="n4S-An-4Sp" id="RgF-uK-O8l"/>
+                        <outlet property="kma" destination="Rxz-FA-Qd4" id="gtf-Ce-1EG"/>
+                        <outlet property="kmi" destination="gzc-cP-4oI" id="Flm-dL-cvQ"/>
+                        <outlet property="ksa" destination="k7w-vm-U9n" id="rfr-7F-92A"/>
+                        <outlet property="kvi" destination="beh-Wt-gSl" id="VcX-lh-Q2v"/>
+                        <outlet property="nombreTrabajador" destination="OJG-No-G5K" id="xyp-Rx-QeZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKp-IQ-6O7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3259.5" y="-1041"/>
+            <point key="canvasLocation" x="2815.5" y="-425"/>
         </scene>
         <!--Menu Principal-->
         <scene sceneID="A52-i0-VhT">
@@ -788,7 +1008,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="33" width="360" height="505"/>
+                                    <rect key="frame" x="20" y="33" width="360" height="466"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="5R6-8Y-REf" id="FOD-g0-Gsd"/>
@@ -798,12 +1018,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <animations/>
                                 <items>
-                                    <barButtonItem title="Agregar" id="Vmg-o7-szh"/>
-                                    <barButtonItem title="Editar" id="vOv-GE-Rc3"/>
+                                    <barButtonItem title="Agregar" id="Vmg-o7-szh">
+                                        <connections>
+                                            <segue destination="dUB-5y-udl" kind="show" identifier="add" id="9JP-Ox-nvw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Editar" id="vOv-GE-Rc3">
+                                        <connections>
+                                            <action selector="agregarTrabajador:" destination="5R6-8Y-REf" id="Fmf-EM-9O8"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Eliminar" id="1gg-Nf-Z0a"/>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="556" width="400" height="44"/>
+                                    <rect key="frame" x="0.0" y="518" width="400" height="44"/>
                                 </variation>
                             </toolbar>
                         </subviews>
@@ -822,8 +1050,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Trabajadores" id="Zry-lF-9IR">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="G7y-Od-Ndk"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="TablaTrabajador" destination="n5y-nb-bGY" id="uSt-v6-MBV"/>
+                        <segue destination="dUB-5y-udl" kind="show" identifier="edit" id="eJX-Mz-oZ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iO8-mj-xSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -834,5 +1066,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Qx2-Df-odH"/>
         <segue reference="RFa-uh-pY8"/>
+        <segue reference="9JP-Ox-nvw"/>
     </inferredMetricsTieBreakers>
 </document>
