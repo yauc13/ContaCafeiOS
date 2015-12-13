@@ -16,6 +16,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="0lr-k6-xAJ" kind="relationship" relationship="rootViewController" id="XZi-6h-vd4"/>
@@ -44,24 +47,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="97" width="241" height="21"/>
+                                    <rect key="frame" x="20" y="97" width="360" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Semana" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFL-VW-YaV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Semana" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NFL-VW-YaV">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="126" width="367" height="30"/>
+                                    <rect key="frame" x="20" y="132" width="360" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-FK-4KF">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Agregar"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="154" y="184" width="92" height="30"/>
+                                    <rect key="frame" x="20" y="192" width="360" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="agregarSemana:" destination="ivi-3h-F4s" eventType="touchUpInside" id="msk-GB-fsK"/>
@@ -117,7 +122,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="88" width="151" height="21"/>
+                                    <rect key="frame" x="20" y="88" width="360" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Insumo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQm-AZ-5DC">
@@ -126,7 +131,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="134" width="321" height="30"/>
+                                    <rect key="frame" x="20" y="127" width="360" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acA-3n-Fgl">
@@ -136,24 +141,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="184" width="352" height="21"/>
+                                    <rect key="frame" x="20" y="171" width="360" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="precio del insumo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cos-8p-EgW">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Precio del Insumo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cos-8p-EgW">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="213" width="360" height="30"/>
+                                    <rect key="frame" x="20" y="212" width="360" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-rn-EvY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Agregar"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="145" y="266" width="86" height="30"/>
+                                    <rect key="frame" x="20" y="285" width="360" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="agregarInsumo:" destination="tTn-mx-Vbq" eventType="touchUpInside" id="eXc-qU-Xtr"/>
@@ -213,7 +220,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="72" width="75" height="21"/>
+                                    <rect key="frame" x="14" y="76" width="75" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gka-01-AgR">
@@ -233,7 +240,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="193" width="75" height="21"/>
+                                    <rect key="frame" x="14" y="190" width="75" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Vi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70k-1R-3ol">
@@ -253,7 +260,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="262" width="75" height="21"/>
+                                    <rect key="frame" x="14" y="266" width="75" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilos Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isU-Oo-oBs">
@@ -263,23 +270,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="299" width="75" height="21"/>
+                                    <rect key="frame" x="14" y="304" width="75" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-An-4Sp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="15" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-An-4Sp">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="97" y="72" width="283" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-FA-Qd4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="25" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-FA-Qd4">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="97" y="110" width="283" height="30"/>
                                 </variation>
@@ -291,50 +298,50 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="110" width="75" height="21"/>
+                                    <rect key="frame" x="14" y="114" width="75" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-cP-4oI">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="45" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-cP-4oI">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="97" y="148" width="283" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-Wq-2g4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-Wq-2g4">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="97" y="186" width="283" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beh-Wt-gSl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="45" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="beh-Wt-gSl">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="97" y="223" width="283" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-vm-U9n">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="85" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-vm-U9n">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="97" y="262" width="283" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dsu-TS-9ns">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="17" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Dsu-TS-9ns">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="97" y="300" width="283" height="30"/>
                                 </variation>
@@ -342,9 +349,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaB-2a-rzs">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Aceptar"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="155" y="372" width="91" height="30"/>
+                                    <rect key="frame" x="14" y="396" width="366" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="agregarTrabajador:" destination="dUB-5y-udl" eventType="touchUpInside" id="KQ6-qg-vCM"/>
@@ -357,16 +366,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="344" width="69" height="21"/>
+                                    <rect key="frame" x="14" y="345" width="69" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-No-G5K">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="96" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-No-G5K">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="97" y="341" width="137" height="30"/>
+                                    <rect key="frame" x="97" y="342" width="283" height="30"/>
                                 </variation>
                             </textField>
                         </subviews>
@@ -445,58 +454,351 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE1-Dr-1fQ">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GvV-9w-3iX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Few-x9-v0A">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4pt-D8-uY5"/>
+                                            <constraint firstAttribute="width" constant="59" id="wqr-dM-mFB"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Calendario.png"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4pt-D8-uY5"/>
+                                                <exclude reference="wqr-dM-mFB"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="4pt-D8-uY5"/>
+                                                <include reference="wqr-dM-mFB"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz6-Ui-BX2">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="151" id="vPW-zP-Tdj"/>
+                                            <constraint firstAttribute="height" constant="30" id="wea-9H-8i6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Semanas">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="vPW-zP-Tdj"/>
+                                                <exclude reference="wea-9H-8i6"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="vPW-zP-Tdj"/>
+                                                <include reference="wea-9H-8i6"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="SwK-Nz-Djw" kind="show" id="Dqi-MN-l3x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <state key="normal" title="Insumos"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="164" y="231" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Few-x9-v0A" firstAttribute="centerY" secondItem="GvV-9w-3iX" secondAttribute="centerY" id="6Ks-ek-HSc"/>
+                                    <constraint firstItem="Few-x9-v0A" firstAttribute="leading" secondItem="GvV-9w-3iX" secondAttribute="leading" constant="24" id="EWb-oI-PDx"/>
+                                    <constraint firstAttribute="height" constant="69" id="Ool-8S-zU8"/>
+                                    <constraint firstItem="tz6-Ui-BX2" firstAttribute="top" secondItem="GvV-9w-3iX" secondAttribute="top" constant="20" id="fyi-hx-kOH"/>
+                                    <constraint firstItem="tz6-Ui-BX2" firstAttribute="leading" secondItem="Few-x9-v0A" secondAttribute="trailing" constant="54" id="uMe-RB-kjV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Few-x9-v0A"/>
+                                        <exclude reference="tz6-Ui-BX2"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="Ool-8S-zU8"/>
+                                        <exclude reference="6Ks-ek-HSc"/>
+                                        <exclude reference="EWb-oI-PDx"/>
+                                        <exclude reference="fyi-hx-kOH"/>
+                                        <exclude reference="uMe-RB-kjV"/>
+                                    </mask>
                                 </variation>
-                                <connections>
-                                    <segue destination="HM2-Ng-fLu" kind="show" id="ASD-nf-qDP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz6-Ui-BX2">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="Few-x9-v0A"/>
+                                        <include reference="tz6-Ui-BX2"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="Ool-8S-zU8"/>
+                                        <include reference="6Ks-ek-HSc"/>
+                                        <include reference="EWb-oI-PDx"/>
+                                        <include reference="fyi-hx-kOH"/>
+                                        <include reference="uMe-RB-kjV"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmH-cb-zRl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTX-Gr-h5h">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="Wso-Dz-e8z"/>
+                                            <constraint firstAttribute="width" constant="58" id="ZFu-jM-NfL"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="r6W-L5-TJI"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="54" id="rU8-Ys-QfT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Insumos.png"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wso-Dz-e8z"/>
+                                                <exclude reference="ZFu-jM-NfL"/>
+                                                <exclude reference="r6W-L5-TJI"/>
+                                                <exclude reference="rU8-Ys-QfT"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Wso-Dz-e8z"/>
+                                                <include reference="ZFu-jM-NfL"/>
+                                                <include reference="r6W-L5-TJI"/>
+                                                <include reference="rU8-Ys-QfT"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE1-Dr-1fQ">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="6PB-xL-wtv"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="OBM-2t-cze"/>
+                                            <constraint firstAttribute="height" constant="30" id="RZ7-4K-nXx"/>
+                                            <constraint firstAttribute="width" constant="150" id="Ts8-SA-tAa"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cad-vn-Ja3"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="eSF-6g-NCf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Insumos">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6PB-xL-wtv"/>
+                                                <exclude reference="OBM-2t-cze"/>
+                                                <exclude reference="RZ7-4K-nXx"/>
+                                                <exclude reference="Ts8-SA-tAa"/>
+                                                <exclude reference="cad-vn-Ja3"/>
+                                                <exclude reference="eSF-6g-NCf"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="6PB-xL-wtv"/>
+                                                <include reference="OBM-2t-cze"/>
+                                                <include reference="RZ7-4K-nXx"/>
+                                                <include reference="Ts8-SA-tAa"/>
+                                                <include reference="cad-vn-Ja3"/>
+                                                <include reference="eSF-6g-NCf"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="HM2-Ng-fLu" kind="show" id="ASD-nf-qDP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <state key="normal" title="Semanas"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="161" y="161" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LE1-Dr-1fQ" firstAttribute="top" secondItem="rmH-cb-zRl" secondAttribute="top" constant="16" id="BFQ-aU-VEf"/>
+                                    <constraint firstItem="bTX-Gr-h5h" firstAttribute="centerY" secondItem="rmH-cb-zRl" secondAttribute="centerY" id="P94-FM-42a"/>
+                                    <constraint firstItem="bTX-Gr-h5h" firstAttribute="leading" secondItem="rmH-cb-zRl" secondAttribute="leading" constant="24" id="U8g-94-x02"/>
+                                    <constraint firstItem="LE1-Dr-1fQ" firstAttribute="leading" secondItem="bTX-Gr-h5h" secondAttribute="trailing" constant="58" id="hq7-UX-50A"/>
+                                    <constraint firstItem="bTX-Gr-h5h" firstAttribute="top" secondItem="rmH-cb-zRl" secondAttribute="top" constant="4" id="wdC-eO-DEP"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="bTX-Gr-h5h"/>
+                                        <exclude reference="LE1-Dr-1fQ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="P94-FM-42a"/>
+                                        <exclude reference="U8g-94-x02"/>
+                                        <exclude reference="wdC-eO-DEP"/>
+                                        <exclude reference="BFQ-aU-VEf"/>
+                                        <exclude reference="hq7-UX-50A"/>
+                                    </mask>
                                 </variation>
-                                <connections>
-                                    <segue destination="SwK-Nz-Djw" kind="show" id="Dqi-MN-l3x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e90-yz-pfS">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="bTX-Gr-h5h"/>
+                                        <include reference="LE1-Dr-1fQ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="P94-FM-42a"/>
+                                        <include reference="U8g-94-x02"/>
+                                        <include reference="wdC-eO-DEP"/>
+                                        <include reference="BFQ-aU-VEf"/>
+                                        <include reference="hq7-UX-50A"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47X-dd-cwh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e90-yz-pfS">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="DYb-LY-Fgx"/>
+                                            <constraint firstAttribute="height" constant="30" id="R1y-Xd-NKj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Mapa">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DYb-LY-Fgx"/>
+                                                <exclude reference="R1y-Xd-NKj"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="DYb-LY-Fgx"/>
+                                                <include reference="R1y-Xd-NKj"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="Wsh-1m-5Ri" kind="show" id="9DS-Nj-A3c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9I-vo-O8f">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="LZR-Lu-J5q"/>
+                                            <constraint firstAttribute="width" constant="56" id="jBs-cL-kB6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Mapa.png"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="LZR-Lu-J5q"/>
+                                                <exclude reference="jBs-cL-kB6"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="LZR-Lu-J5q"/>
+                                                <include reference="jBs-cL-kB6"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <state key="normal" title="Mapa"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="302" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="y9I-vo-O8f" firstAttribute="top" secondItem="47X-dd-cwh" secondAttribute="top" constant="8" id="5yi-ij-toF"/>
+                                    <constraint firstAttribute="height" constant="69" id="BQj-Wa-Z6k"/>
+                                    <constraint firstItem="y9I-vo-O8f" firstAttribute="leading" secondItem="47X-dd-cwh" secondAttribute="leading" constant="25" id="bSn-Bf-uHc"/>
+                                    <constraint firstItem="e90-yz-pfS" firstAttribute="leading" secondItem="y9I-vo-O8f" secondAttribute="trailing" constant="59" id="ggg-MD-bcO"/>
+                                    <constraint firstItem="e90-yz-pfS" firstAttribute="top" secondItem="47X-dd-cwh" secondAttribute="top" constant="20" id="iuS-3Y-9xB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="e90-yz-pfS"/>
+                                        <exclude reference="y9I-vo-O8f"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="BQj-Wa-Z6k"/>
+                                        <exclude reference="5yi-ij-toF"/>
+                                        <exclude reference="bSn-Bf-uHc"/>
+                                        <exclude reference="ggg-MD-bcO"/>
+                                        <exclude reference="iuS-3Y-9xB"/>
+                                    </mask>
                                 </variation>
-                                <connections>
-                                    <segue destination="Wsh-1m-5Ri" kind="show" id="9DS-Nj-A3c"/>
-                                </connections>
-                            </button>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="e90-yz-pfS"/>
+                                        <include reference="y9I-vo-O8f"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="BQj-Wa-Z6k"/>
+                                        <include reference="5yi-ij-toF"/>
+                                        <include reference="bSn-Bf-uHc"/>
+                                        <include reference="ggg-MD-bcO"/>
+                                        <include reference="iuS-3Y-9xB"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="GvV-9w-3iX" secondAttribute="leading" id="2mT-ZY-6Ej"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="47X-dd-cwh" secondAttribute="trailing" id="6IS-X4-swL"/>
+                            <constraint firstItem="GvV-9w-3iX" firstAttribute="top" secondItem="EOs-sF-QVN" secondAttribute="bottom" constant="31" id="FRv-Xa-scg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rmH-cb-zRl" secondAttribute="trailing" id="K6c-J4-kSV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GvV-9w-3iX" secondAttribute="trailing" id="Piy-tQ-bhI"/>
+                            <constraint firstItem="rmH-cb-zRl" firstAttribute="top" secondItem="GvV-9w-3iX" secondAttribute="bottom" constant="8" id="Se6-OL-XTJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="47X-dd-cwh" secondAttribute="leading" id="WyF-sg-xNd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rmH-cb-zRl" secondAttribute="leading" id="X4E-z8-CBd"/>
+                            <constraint firstItem="rmH-cb-zRl" firstAttribute="top" secondItem="GvV-9w-3iX" secondAttribute="bottom" constant="8" id="eMn-Ff-o5x"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rmH-cb-zRl" secondAttribute="leading" id="jmh-Yr-ObQ"/>
+                            <constraint firstItem="47X-dd-cwh" firstAttribute="top" secondItem="rmH-cb-zRl" secondAttribute="bottom" constant="8" id="vI5-t4-7Oa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rmH-cb-zRl" secondAttribute="trailing" id="x2y-cK-vC6"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="LE1-Dr-1fQ"/>
-                                <exclude reference="tz6-Ui-BX2"/>
-                                <exclude reference="e90-yz-pfS"/>
+                                <exclude reference="GvV-9w-3iX"/>
+                                <exclude reference="rmH-cb-zRl"/>
+                                <exclude reference="47X-dd-cwh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2mT-ZY-6Ej"/>
+                                <exclude reference="FRv-Xa-scg"/>
+                                <exclude reference="Piy-tQ-bhI"/>
+                                <exclude reference="K6c-J4-kSV"/>
+                                <exclude reference="Se6-OL-XTJ"/>
+                                <exclude reference="X4E-z8-CBd"/>
+                                <exclude reference="eMn-Ff-o5x"/>
+                                <exclude reference="jmh-Yr-ObQ"/>
+                                <exclude reference="x2y-cK-vC6"/>
+                                <exclude reference="6IS-X4-swL"/>
+                                <exclude reference="WyF-sg-xNd"/>
+                                <exclude reference="vI5-t4-7Oa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="LE1-Dr-1fQ"/>
-                                <include reference="tz6-Ui-BX2"/>
-                                <include reference="e90-yz-pfS"/>
+                                <include reference="GvV-9w-3iX"/>
+                                <include reference="rmH-cb-zRl"/>
+                                <include reference="47X-dd-cwh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2mT-ZY-6Ej"/>
+                                <include reference="FRv-Xa-scg"/>
+                                <include reference="Piy-tQ-bhI"/>
+                                <include reference="K6c-J4-kSV"/>
+                                <include reference="Se6-OL-XTJ"/>
+                                <include reference="X4E-z8-CBd"/>
+                                <include reference="eMn-Ff-o5x"/>
+                                <include reference="jmh-Yr-ObQ"/>
+                                <include reference="x2y-cK-vC6"/>
+                                <include reference="6IS-X4-swL"/>
+                                <include reference="WyF-sg-xNd"/>
+                                <include reference="vI5-t4-7Oa"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu Principal" id="6Kb-Fm-sZB"/>
+                    <navigationItem key="navigationItem" title="Menu Principal" id="6Kb-Fm-sZB">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="vPh-eO-Sf9"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="Sfj-6j-PCe" kind="presentation" identifier="loginView" id="c25-f0-oc1"/>
                     </connections>
@@ -514,6 +816,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6Ev-kW-5IY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6sK-WC-DdH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc4-Zt-zax">
@@ -634,6 +937,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ozO-es-vOP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gbI-f6-o0e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-Ti-Sae">
@@ -675,15 +979,6 @@
                                     <rect key="frame" x="20" y="118" width="360" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 Mayuscula, 1 Numero, 5 Caracteres" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Hvw-Dx-yjB">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="188" width="360" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpm-6e-sTv">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -706,6 +1001,15 @@
                                     <rect key="frame" x="20" y="264" width="360" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 Mayuscula, 1 Numero, 5 Caracteres" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Hvw-Dx-yjB">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="188" width="360" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -715,9 +1019,9 @@
                                 <exclude reference="t0w-5O-y9n"/>
                                 <exclude reference="bAC-GH-NUz"/>
                                 <exclude reference="Vwk-Kt-zC2"/>
-                                <exclude reference="Hvw-Dx-yjB"/>
                                 <exclude reference="Wpm-6e-sTv"/>
                                 <exclude reference="zpB-OH-0A8"/>
+                                <exclude reference="Hvw-Dx-yjB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -726,9 +1030,9 @@
                                 <include reference="t0w-5O-y9n"/>
                                 <include reference="bAC-GH-NUz"/>
                                 <include reference="Vwk-Kt-zC2"/>
-                                <include reference="Hvw-Dx-yjB"/>
                                 <include reference="Wpm-6e-sTv"/>
                                 <include reference="zpB-OH-0A8"/>
+                                <include reference="Hvw-Dx-yjB"/>
                             </mask>
                         </variation>
                     </view>
@@ -751,14 +1055,12 @@
                         <viewControllerLayoutGuide type="bottom" id="GrA-3r-ulg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JfE-80-dsR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tN9-1X-Ctv">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="536"/>
-                                </variation>
                             </mapView>
                         </subviews>
                         <animations/>
@@ -774,10 +1076,10 @@
                                 <exclude reference="tN9-1X-Ctv"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="a7I-70-VAQ"/>
                                 <exclude reference="0V9-3p-0H3"/>
                                 <exclude reference="Fjf-aW-isS"/>
                                 <exclude reference="sVs-ch-sup"/>
-                                <exclude reference="a7I-70-VAQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -785,10 +1087,10 @@
                                 <include reference="tN9-1X-Ctv"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="a7I-70-VAQ"/>
                                 <include reference="0V9-3p-0H3"/>
                                 <include reference="Fjf-aW-isS"/>
                                 <include reference="sVs-ch-sup"/>
-                                <include reference="a7I-70-VAQ"/>
                             </mask>
                         </variation>
                     </view>
@@ -812,12 +1114,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FR0-q5-IB3">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQx-wm-tmX">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Agregar" id="9np-dS-m8p">
+                                        <connections>
+                                            <segue destination="tTn-mx-Vbq" kind="show" identifier="add" id="RFa-uh-pY8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YKh-ns-PG6"/>
+                                    <barButtonItem title="Editar" id="7CI-MH-Wtz">
+                                        <connections>
+                                            <action selector="editarInsumo:" destination="HM2-Ng-fLu" id="Buu-1j-rhI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ma6-Rk-Oea"/>
+                                    <barButtonItem title="Eliminar" id="OYL-5l-MjF"/>
+                                </items>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="556" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FR0-q5-IB3">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaInsumo" rowHeight="101" id="JB7-Kd-44R" customClass="InsumoTableViewCell" customModule="ContaCafeParse" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaInsumo" rowHeight="72" id="JB7-Kd-44R" customClass="InsumoTableViewCell" customModule="ContaCafeParse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JB7-Kd-44R" id="vsY-Tq-caY">
@@ -828,18 +1152,19 @@
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-Cy-WlN">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <animations/>
+                                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="VDw-QD-0XL" firstAttribute="top" secondItem="vsY-Tq-caY" secondAttribute="topMargin" constant="2" id="1K3-OV-2ne"/>
                                                 <constraint firstItem="VDw-QD-0XL" firstAttribute="leading" secondItem="vsY-Tq-caY" secondAttribute="leadingMargin" constant="6" id="6hp-IJ-9uJ"/>
@@ -896,29 +1221,12 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="72" width="353" height="447"/>
+                                    <rect key="frame" x="24" y="76" width="353" height="447"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="HM2-Ng-fLu" id="Ygu-3b-d1I"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQx-wm-tmX">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
-                                <animations/>
-                                <items>
-                                    <barButtonItem title="Agregar" id="9np-dS-m8p">
-                                        <connections>
-                                            <segue destination="tTn-mx-Vbq" kind="show" identifier="add" id="RFa-uh-pY8"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Editar" id="7CI-MH-Wtz">
-                                        <connections>
-                                            <action selector="editarInsumo:" destination="HM2-Ng-fLu" id="Buu-1j-rhI"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Eliminar" id="OYL-5l-MjF"/>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -931,8 +1239,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="FR0-q5-IB3"/>
                                 <exclude reference="qQx-wm-tmX"/>
+                                <exclude reference="FR0-q5-IB3"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="hVQ-g0-mgP"/>
@@ -942,8 +1250,8 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="FR0-q5-IB3"/>
                                 <include reference="qQx-wm-tmX"/>
+                                <include reference="FR0-q5-IB3"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="hVQ-g0-mgP"/>
@@ -981,6 +1289,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXq-Qn-ywS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Agregar" id="1ht-lL-6rr">
+                                        <connections>
+                                            <segue destination="ivi-3h-F4s" kind="show" identifier="add" id="Qx2-Df-odH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qsS-z8-stG"/>
+                                    <barButtonItem title="Editar" id="tGV-zv-nPo">
+                                        <connections>
+                                            <action selector="insertarSemana:" destination="SwK-Nz-Djw" id="XL4-JL-N8v"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gFI-uQ-duD"/>
+                                    <barButtonItem title="Eliminar" id="3MD-ex-fT2"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bVv-uJ-5qG"/>
+                                    <barButtonItem title="Ver" id="3PQ-ZS-fba">
+                                        <connections>
+                                            <action selector="mostrarTrabajadores:" destination="SwK-Nz-Djw" id="iul-00-B9I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="516" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-bR-t0W">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -997,14 +1333,16 @@
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="14" y="8" width="208" height="21"/>
+                                                        <rect key="frame" x="11" y="12" width="354" height="21"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
                                             <animations/>
+                                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="XYM-LF-9zH"/>
@@ -1023,50 +1361,25 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="84" width="376" height="432"/>
+                                    <rect key="frame" x="30" y="84" width="350" height="432"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="SwK-Nz-Djw" id="PEI-Lk-7AF"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXq-Qn-ywS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <animations/>
-                                <items>
-                                    <barButtonItem title="Agregar" id="1ht-lL-6rr">
-                                        <connections>
-                                            <segue destination="ivi-3h-F4s" kind="show" identifier="add" id="Qx2-Df-odH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Editar" id="tGV-zv-nPo">
-                                        <connections>
-                                            <action selector="insertarSemana:" destination="SwK-Nz-Djw" id="XL4-JL-N8v"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Eliminar" id="3MD-ex-fT2"/>
-                                    <barButtonItem title="Ver Trabajadores" id="3PQ-ZS-fba">
-                                        <connections>
-                                            <action selector="mostrarTrabajadores:" destination="SwK-Nz-Djw" id="iul-00-B9I"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="516" width="400" height="44"/>
-                                </variation>
-                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="pf2-bR-t0W"/>
                                 <exclude reference="wXq-Qn-ywS"/>
+                                <exclude reference="pf2-bR-t0W"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="pf2-bR-t0W"/>
                                 <include reference="wXq-Qn-ywS"/>
+                                <include reference="pf2-bR-t0W"/>
                             </mask>
                         </variation>
                     </view>
@@ -1102,6 +1415,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCg-K8-wk8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Agregar" id="Vmg-o7-szh">
+                                        <connections>
+                                            <segue destination="dUB-5y-udl" kind="show" identifier="add" id="9JP-Ox-nvw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="u4V-WQ-TfE"/>
+                                    <barButtonItem title="Editar" id="vOv-GE-Rc3">
+                                        <connections>
+                                            <action selector="agregarTrabajador:" destination="5R6-8Y-REf" id="Fmf-EM-9O8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6qH-1v-K0A"/>
+                                    <barButtonItem title="Eliminar" id="1gg-Nf-Z0a"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="518" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n5y-nb-bGY">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -1325,39 +1660,19 @@
                                     <outlet property="dataSource" destination="5R6-8Y-REf" id="FOD-g0-Gsd"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCg-K8-wk8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <animations/>
-                                <items>
-                                    <barButtonItem title="Agregar" id="Vmg-o7-szh">
-                                        <connections>
-                                            <segue destination="dUB-5y-udl" kind="show" identifier="add" id="9JP-Ox-nvw"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Editar" id="vOv-GE-Rc3">
-                                        <connections>
-                                            <action selector="agregarTrabajador:" destination="5R6-8Y-REf" id="Fmf-EM-9O8"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Eliminar" id="1gg-Nf-Z0a"/>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="518" width="400" height="44"/>
-                                </variation>
-                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="n5y-nb-bGY"/>
                                 <exclude reference="OCg-K8-wk8"/>
+                                <exclude reference="n5y-nb-bGY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="n5y-nb-bGY"/>
                                 <include reference="OCg-K8-wk8"/>
+                                <include reference="n5y-nb-bGY"/>
                             </mask>
                         </variation>
                     </view>
@@ -1374,9 +1689,15 @@
             <point key="canvasLocation" x="2053.5" y="-425"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendario.png" width="512" height="512"/>
+        <image name="Insumos.png" width="210" height="211"/>
+        <image name="Mapa.png" width="320" height="320"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qx2-Df-odH"/>
         <segue reference="RFa-uh-pY8"/>
-        <segue reference="9JP-Ox-nvw"/>
+        <segue reference="Qx2-Df-odH"/>
+        <segue reference="eJX-Mz-oZ1"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
