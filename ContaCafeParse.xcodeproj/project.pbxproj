@@ -34,7 +34,6 @@
 		1B4B67111C16355500247198 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B67101C16355500247198 /* Social.framework */; };
 		1B4B67141C16442200247198 /* Trabajador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B67131C16442200247198 /* Trabajador.swift */; };
 		1B509EE31C1CCAF9005160A1 /* AgregarTrabajadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B509EE21C1CCAF9005160A1 /* AgregarTrabajadorViewController.swift */; };
-		1B5AAAE31C1C99E300521539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AAAE11C1C99E300521539 /* Main.storyboard */; };
 		1B9F93E91C1DC30200FE43CE /* Mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9F93E81C1DC30200FE43CE /* Mapa.png */; };
 		1B9F93EB1C1DC30A00FE43CE /* Calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9F93EA1C1DC30A00FE43CE /* Calendario.png */; };
 		1B9F93ED1C1DC92700FE43CE /* Insumos.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9F93EC1C1DC92700FE43CE /* Insumos.png */; };
@@ -51,6 +50,8 @@
 		1BE29AF11C1E1E7D00764098 /* SemanaDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29AF01C1E1E7D00764098 /* SemanaDao.swift */; };
 		1BE29AF31C1E1FA400764098 /* VerSemanaLocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29AF21C1E1FA400764098 /* VerSemanaLocalViewController.swift */; };
 		1BE29AF71C1E20B100764098 /* SemanaLocalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29AF61C1E20B100764098 /* SemanaLocalTableViewCell.swift */; };
+		1BE29AFB1C1E270B00764098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE29AFA1C1E270B00764098 /* Main.storyboard */; };
+		1BE29AFF1C1E278A00764098 /* Base de Datos.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE29AFE1C1E278A00764098 /* Base de Datos.png */; };
 		1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */; };
 		1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */; };
 		1BE814E21C1A384F009BCDBC /* Insumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814E11C1A384F009BCDBC /* Insumo.swift */; };
@@ -145,7 +146,6 @@
 		1B4B67101C16355500247198 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1B4B67131C16442200247198 /* Trabajador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trabajador.swift; sourceTree = "<group>"; };
 		1B509EE21C1CCAF9005160A1 /* AgregarTrabajadorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarTrabajadorViewController.swift; sourceTree = "<group>"; };
-		1B5AAAE21C1C99E300521539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B9F93E81C1DC30200FE43CE /* Mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mapa.png; sourceTree = "<group>"; };
 		1B9F93EA1C1DC30A00FE43CE /* Calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendario.png; sourceTree = "<group>"; };
 		1B9F93EC1C1DC92700FE43CE /* Insumos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Insumos.png; sourceTree = "<group>"; };
@@ -163,6 +163,8 @@
 		1BE29AF01C1E1E7D00764098 /* SemanaDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaDao.swift; sourceTree = "<group>"; };
 		1BE29AF21C1E1FA400764098 /* VerSemanaLocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerSemanaLocalViewController.swift; sourceTree = "<group>"; };
 		1BE29AF61C1E20B100764098 /* SemanaLocalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaLocalTableViewCell.swift; sourceTree = "<group>"; };
+		1BE29AFA1C1E270B00764098 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1BE29AFE1C1E278A00764098 /* Base de Datos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Base de Datos.png"; sourceTree = "<group>"; };
 		1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerInsumoViewController.swift; sourceTree = "<group>"; };
 		1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsumoTableViewCell.swift; sourceTree = "<group>"; };
 		1BE814E11C1A384F009BCDBC /* Insumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insumo.swift; sourceTree = "<group>"; };
@@ -250,9 +252,9 @@
 				1B4B66E51C162F3800247198 /* ViewController.swift */,
 				1B4B66EA1C162F3800247198 /* Assets.xcassets */,
 				1B4B66EC1C162F3800247198 /* LaunchScreen.storyboard */,
-				1B5AAAE11C1C99E300521539 /* Main.storyboard */,
 				1B4B66EF1C162F3800247198 /* Info.plist */,
 				1B32866A1C18741600D3C00D /* VerSemanaViewController.swift */,
+				1BE29AFA1C1E270B00764098 /* Main.storyboard */,
 				1BA867BC1C19DC020095C3AB /* AgregarSemanaViewController.swift */,
 				1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */,
 				1B3C3FC11C1B38860038C48A /* AgregarInsumoViewController.swift */,
@@ -316,6 +318,7 @@
 				1B9F93E81C1DC30200FE43CE /* Mapa.png */,
 				1B9F93EA1C1DC30A00FE43CE /* Calendario.png */,
 				1B9F93EC1C1DC92700FE43CE /* Insumos.png */,
+				1BE29AFE1C1E278A00764098 /* Base de Datos.png */,
 				1BE29ACF1C1E135000764098 /* clima.png */,
 			);
 			name = Images;
@@ -476,9 +479,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B5AAAE31C1C99E300521539 /* Main.storyboard in Resources */,
 				1BE29AD01C1E135000764098 /* clima.png in Resources */,
 				1B4B66EE1C162F3800247198 /* LaunchScreen.storyboard in Resources */,
+				1BE29AFB1C1E270B00764098 /* Main.storyboard in Resources */,
+				1BE29AFF1C1E278A00764098 /* Base de Datos.png in Resources */,
 				1B9F93ED1C1DC92700FE43CE /* Insumos.png in Resources */,
 				1B9F93EB1C1DC30A00FE43CE /* Calendario.png in Resources */,
 				1B4B66EB1C162F3800247198 /* Assets.xcassets in Resources */,
@@ -530,14 +534,6 @@
 				1B4B66ED1C162F3800247198 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1B5AAAE11C1C99E300521539 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B5AAAE21C1C99E300521539 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
