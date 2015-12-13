@@ -47,10 +47,73 @@
 		1BE29ACC1C1E0E4300764098 /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29ACB1C1E0E4300764098 /* HttpConnection.swift */; };
 		1BE29ACE1C1E0F5700764098 /* ClimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29ACD1C1E0F5700764098 /* ClimaViewController.swift */; };
 		1BE29AD01C1E135000764098 /* clima.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE29ACF1C1E135000764098 /* clima.png */; };
+		1BE29AEE1C1E1E4C00764098 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE29ADF1C1E1E3700764098 /* SQLite.framework */; };
+		1BE29AF11C1E1E7D00764098 /* SemanaDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29AF01C1E1E7D00764098 /* SemanaDao.swift */; };
+		1BE29AF31C1E1FA400764098 /* VerSemanaLocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29AF21C1E1FA400764098 /* VerSemanaLocalViewController.swift */; };
+		1BE29AF71C1E20B100764098 /* SemanaLocalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29AF61C1E20B100764098 /* SemanaLocalTableViewCell.swift */; };
 		1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */; };
 		1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */; };
 		1BE814E21C1A384F009BCDBC /* Insumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814E11C1A384F009BCDBC /* Insumo.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BE29ADE1C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC2B29E21B26F718001C60EA;
+			remoteInfo = "SQLite iOS";
+		};
+		1BE29AE01C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC2B29EC1B26F718001C60EA;
+			remoteInfo = "SQLite iOS Tests";
+		};
+		1BE29AE21C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC7253AC1B52ADEB009B38B1;
+			remoteInfo = "SQLite Mac";
+		};
+		1BE29AE41C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC7253B51B52ADEC009B38B1;
+			remoteInfo = "SQLite Mac Tests";
+		};
+		1BE29AE61C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BB7A1B7434F90040D364;
+			remoteInfo = "SQLiteCipher iOS";
+		};
+		1BE29AE81C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BB831B7434F90040D364;
+			remoteInfo = "SQLiteCipher iOS Tests";
+		};
+		1BE29AEA1C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BBB01B7438610040D364;
+			remoteInfo = "SQLiteCipher Mac";
+		};
+		1BE29AEC1C1E1E3700764098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BBB91B7438620040D364;
+			remoteInfo = "SQLiteCipher Mac Tests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1B32866A1C18741600D3C00D /* VerSemanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerSemanaViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +158,11 @@
 		1BE29ACB1C1E0E4300764098 /* HttpConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpConnection.swift; sourceTree = "<group>"; };
 		1BE29ACD1C1E0F5700764098 /* ClimaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimaViewController.swift; sourceTree = "<group>"; };
 		1BE29ACF1C1E135000764098 /* clima.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clima.png; sourceTree = "<group>"; };
+		1BE29AD11C1E1BB000764098 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		1BE29AF01C1E1E7D00764098 /* SemanaDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaDao.swift; sourceTree = "<group>"; };
+		1BE29AF21C1E1FA400764098 /* VerSemanaLocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerSemanaLocalViewController.swift; sourceTree = "<group>"; };
+		1BE29AF61C1E20B100764098 /* SemanaLocalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanaLocalTableViewCell.swift; sourceTree = "<group>"; };
 		1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerInsumoViewController.swift; sourceTree = "<group>"; };
 		1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsumoTableViewCell.swift; sourceTree = "<group>"; };
 		1BE814E11C1A384F009BCDBC /* Insumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insumo.swift; sourceTree = "<group>"; };
@@ -105,9 +173,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE29AEE1C1E1E4C00764098 /* SQLite.framework in Frameworks */,
+				1B4B670D1C1634E400247198 /* libsqlite3.tbd in Frameworks */,
 				1B4B67111C16355500247198 /* Social.framework in Frameworks */,
 				1B4B670F1C16354700247198 /* Accounts.framework in Frameworks */,
-				1B4B670D1C1634E400247198 /* libsqlite3.tbd in Frameworks */,
 				1B4B670B1C1634D300247198 /* libz.tbd in Frameworks */,
 				1B4B67091C1634BB00247198 /* SystemConfiguration.framework in Frameworks */,
 				1B4B67071C1634AD00247198 /* StoreKit.framework in Frameworks */,
@@ -131,6 +200,7 @@
 				1B32866F1C18877100D3C00D /* SemanaTableViewCell.swift */,
 				1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */,
 				1BAE84A91C1C81DF00B4789A /* TrabajadorTableViewCell.swift */,
+				1BE29AF61C1E20B100764098 /* SemanaLocalTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -148,6 +218,8 @@
 		1B4B66D71C162F3800247198 = {
 			isa = PBXGroup;
 			children = (
+				1BE29AEF1C1E1E6000764098 /* Database */,
+				1B4B670C1C1634E400247198 /* libsqlite3.tbd */,
 				1BE29ACA1C1E0DD900764098 /* Net */,
 				1B9F93E71C1DC2EE00FE43CE /* Images */,
 				1B9F93E61C1DC2E200FE43CE /* Mapas */,
@@ -158,6 +230,7 @@
 				1B4B66F51C162F4400247198 /* Frameworks */,
 				1B4B66E21C162F3800247198 /* ContaCafeParse */,
 				1B4B66E11C162F3800247198 /* Products */,
+				1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +245,7 @@
 		1B4B66E21C162F3800247198 /* ContaCafeParse */ = {
 			isa = PBXGroup;
 			children = (
+				1BE29AD11C1E1BB000764098 /* Bridging-Header.h */,
 				1B4B66E31C162F3800247198 /* AppDelegate.swift */,
 				1B4B66E51C162F3800247198 /* ViewController.swift */,
 				1B4B66EA1C162F3800247198 /* Assets.xcassets */,
@@ -184,6 +258,7 @@
 				1B3C3FC11C1B38860038C48A /* AgregarInsumoViewController.swift */,
 				1BAE84A71C1C818100B4789A /* VerTrabajadorViewController.swift */,
 				1B509EE21C1CCAF9005160A1 /* AgregarTrabajadorViewController.swift */,
+				1BE29AF21C1E1FA400764098 /* VerSemanaLocalViewController.swift */,
 			);
 			path = ContaCafeParse;
 			sourceTree = "<group>";
@@ -193,7 +268,6 @@
 			children = (
 				1B4B67101C16355500247198 /* Social.framework */,
 				1B4B670E1C16354700247198 /* Accounts.framework */,
-				1B4B670C1C1634E400247198 /* libsqlite3.tbd */,
 				1B4B670A1C1634D300247198 /* libz.tbd */,
 				1B4B67081C1634BB00247198 /* SystemConfiguration.framework */,
 				1B4B67061C1634AD00247198 /* StoreKit.framework */,
@@ -256,6 +330,29 @@
 			name = Net;
 			sourceTree = "<group>";
 		};
+		1BE29AD31C1E1E3700764098 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BE29ADF1C1E1E3700764098 /* SQLite.framework */,
+				1BE29AE11C1E1E3700764098 /* SQLite iOS Tests.xctest */,
+				1BE29AE31C1E1E3700764098 /* SQLite.framework */,
+				1BE29AE51C1E1E3700764098 /* SQLite Mac Tests.xctest */,
+				1BE29AE71C1E1E3700764098 /* SQLiteCipher.framework */,
+				1BE29AE91C1E1E3700764098 /* SQLiteCipher iOS Tests.xctest */,
+				1BE29AEB1C1E1E3700764098 /* SQLiteCipher.framework */,
+				1BE29AED1C1E1E3700764098 /* SQLiteCipher Mac Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BE29AEF1C1E1E6000764098 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				1BE29AF01C1E1E7D00764098 /* SemanaDao.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,12 +399,77 @@
 			mainGroup = 1B4B66D71C162F3800247198;
 			productRefGroup = 1B4B66E11C162F3800247198 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1BE29AD31C1E1E3700764098 /* Products */;
+					ProjectRef = 1BE29AD21C1E1E3700764098 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1B4B66DF1C162F3800247198 /* ContaCafeParse */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1BE29ADF1C1E1E3700764098 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 1BE29ADE1C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE29AE11C1E1E3700764098 /* SQLite iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite iOS Tests.xctest";
+			remoteRef = 1BE29AE01C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE29AE31C1E1E3700764098 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 1BE29AE21C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE29AE51C1E1E3700764098 /* SQLite Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite Mac Tests.xctest";
+			remoteRef = 1BE29AE41C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE29AE71C1E1E3700764098 /* SQLiteCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLiteCipher.framework;
+			remoteRef = 1BE29AE61C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE29AE91C1E1E3700764098 /* SQLiteCipher iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher iOS Tests.xctest";
+			remoteRef = 1BE29AE81C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE29AEB1C1E1E3700764098 /* SQLiteCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLiteCipher.framework;
+			remoteRef = 1BE29AEA1C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE29AED1C1E1E3700764098 /* SQLiteCipher Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher Mac Tests.xctest";
+			remoteRef = 1BE29AEC1C1E1E3700764098 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1B4B66DE1C162F3800247198 /* Resources */ = {
@@ -336,17 +498,20 @@
 				1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */,
 				1B3286731C1895EA00D3C00D /* SemanaParse.swift in Sources */,
 				1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */,
+				1BE29AF31C1E1FA400764098 /* VerSemanaLocalViewController.swift in Sources */,
 				1BC58B201C1CEDF4003B1487 /* RegisterPageViewController.swift in Sources */,
 				1BE29ACC1C1E0E4300764098 /* HttpConnection.swift in Sources */,
 				1BAE84AA1C1C81DF00B4789A /* TrabajadorTableViewCell.swift in Sources */,
 				1BAE84A81C1C818100B4789A /* VerTrabajadorViewController.swift in Sources */,
 				1BC58B221C1CF0D9003B1487 /* LoginViewController.swift in Sources */,
+				1BE29AF11C1E1E7D00764098 /* SemanaDao.swift in Sources */,
 				1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */,
 				1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */,
 				1B509EE31C1CCAF9005160A1 /* AgregarTrabajadorViewController.swift in Sources */,
 				1B3C3FC21C1B38860038C48A /* AgregarInsumoViewController.swift in Sources */,
 				1B32866B1C18741600D3C00D /* VerSemanaViewController.swift in Sources */,
 				1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */,
+				1BE29AF71C1E20B100764098 /* SemanaLocalTableViewCell.swift in Sources */,
 				1BC58B1E1C1CE5F6003B1487 /* MapViewController.swift in Sources */,
 				1BE29ACE1C1E0F5700764098 /* ClimaViewController.swift in Sources */,
 				1B3C3FC01C1B136A0038C48A /* TrabajadorParse.swift in Sources */,
@@ -473,6 +638,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = unicauca.ContaCafeParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ContaCafeParse/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -488,6 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = unicauca.ContaCafeParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ContaCafeParse/Bridging-Header.h";
 			};
 			name = Release;
 		};

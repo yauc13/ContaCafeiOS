@@ -59,9 +59,27 @@ struct SemanaParse {
     }
     
     
+    func deleteSemana(semana:Semana){
+        
+        let query = PFQuery(className:CLASS)
+        query.getObjectInBackgroundWithId(semana.idSemana) { (parseObject: PFObject?, error: NSError?) -> Void in
+            if error != nil {
+                print(error)
+            } else if let parseObject = parseObject {
+                parseObject.deleteInBackground()
+                
+            }
+        }
+        
+    }
+    
+    
     func getAllSemana(list:VerSemanaViewController) -> Void{
 
-       
+        let semanaDao:SemanaDao!
+        semanaDao = SemanaDao()
+        semanaDao.deleteAll()
+
         
         let query = PFQuery(className:CLASS)
         //query.whereKey("playerName", equalTo:"Sean Plott")
@@ -84,6 +102,7 @@ struct SemanaParse {
                         print("nombre sema list: \(s.nombreSemana)")
                         
                         list.data.append(s)
+                        semanaDao.insert(s)
                         let tama:Int! = list.data.count
                         print("tamano for: \(tama!)")
                         

@@ -16,11 +16,12 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
    
     
     var data:[Semana]!
+    let semanaParse:SemanaParse = SemanaParse()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    let semanaParse:SemanaParse = SemanaParse()
+    
 
         data = []
         
@@ -58,6 +59,13 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
     }
     
     
+    @IBAction func eliminarSemana(sender: AnyObject) {
+        if(TablaSemana.indexPathForSelectedRow == nil){
+            self.showUnSelectedMessage("Eliminar Semana")
+        }else{
+            showDeleteSemana()
+        }
+    }
     
     
     @IBAction func mostrarTrabajadores(sender: AnyObject) {
@@ -80,6 +88,29 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
         
         presentViewController(alert, animated: true, completion: nil)
     }
+    
+    func showDeleteSemana(){
+        let s:Semana = data[(TablaSemana.indexPathForSelectedRow?.row)!]
+        let alert:UIAlertController = UIAlertController(title: "Eliminar Semana", message: "Desea Eliminar la Semana \(s.nombreSemana)", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let actionOk:UIAlertAction = UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
+            self.data.removeAtIndex((self.TablaSemana.indexPathForSelectedRow?.row)!)
+            self.semanaParse.deleteSemana(s)
+            self.TablaSemana.reloadData()
+        }
+        
+        let actionCancel:UIAlertAction = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Default, handler: nil)
+        
+        alert.addAction(actionOk)
+        alert.addAction(actionCancel)
+        
+        presentViewController(alert, animated: true, completion: nil)
+        
+        
+    }
+    
+  
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
