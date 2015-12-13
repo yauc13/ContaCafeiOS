@@ -44,6 +44,9 @@
 		1BC58B1E1C1CE5F6003B1487 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC58B1D1C1CE5F6003B1487 /* MapViewController.swift */; };
 		1BC58B201C1CEDF4003B1487 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC58B1F1C1CEDF4003B1487 /* RegisterPageViewController.swift */; };
 		1BC58B221C1CF0D9003B1487 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC58B211C1CF0D9003B1487 /* LoginViewController.swift */; };
+		1BE29ACC1C1E0E4300764098 /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29ACB1C1E0E4300764098 /* HttpConnection.swift */; };
+		1BE29ACE1C1E0F5700764098 /* ClimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE29ACD1C1E0F5700764098 /* ClimaViewController.swift */; };
+		1BE29AD01C1E135000764098 /* clima.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE29ACF1C1E135000764098 /* clima.png */; };
 		1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */; };
 		1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */; };
 		1BE814E21C1A384F009BCDBC /* Insumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814E11C1A384F009BCDBC /* Insumo.swift */; };
@@ -89,6 +92,9 @@
 		1BC58B1D1C1CE5F6003B1487 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1BC58B1F1C1CEDF4003B1487 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		1BC58B211C1CF0D9003B1487 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1BE29ACB1C1E0E4300764098 /* HttpConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpConnection.swift; sourceTree = "<group>"; };
+		1BE29ACD1C1E0F5700764098 /* ClimaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimaViewController.swift; sourceTree = "<group>"; };
+		1BE29ACF1C1E135000764098 /* clima.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clima.png; sourceTree = "<group>"; };
 		1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerInsumoViewController.swift; sourceTree = "<group>"; };
 		1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsumoTableViewCell.swift; sourceTree = "<group>"; };
 		1BE814E11C1A384F009BCDBC /* Insumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insumo.swift; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 		1B4B66D71C162F3800247198 = {
 			isa = PBXGroup;
 			children = (
+				1BE29ACA1C1E0DD900764098 /* Net */,
 				1B9F93E71C1DC2EE00FE43CE /* Images */,
 				1B9F93E61C1DC2E200FE43CE /* Mapas */,
 				1B9F93E51C1DC2CE00FE43CE /* Login */,
@@ -235,8 +242,18 @@
 				1B9F93E81C1DC30200FE43CE /* Mapa.png */,
 				1B9F93EA1C1DC30A00FE43CE /* Calendario.png */,
 				1B9F93EC1C1DC92700FE43CE /* Insumos.png */,
+				1BE29ACF1C1E135000764098 /* clima.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		1BE29ACA1C1E0DD900764098 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				1BE29ACD1C1E0F5700764098 /* ClimaViewController.swift */,
+				1BE29ACB1C1E0E4300764098 /* HttpConnection.swift */,
+			);
+			name = Net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B5AAAE31C1C99E300521539 /* Main.storyboard in Resources */,
+				1BE29AD01C1E135000764098 /* clima.png in Resources */,
 				1B4B66EE1C162F3800247198 /* LaunchScreen.storyboard in Resources */,
 				1B9F93ED1C1DC92700FE43CE /* Insumos.png in Resources */,
 				1B9F93EB1C1DC30A00FE43CE /* Calendario.png in Resources */,
@@ -319,6 +337,7 @@
 				1B3286731C1895EA00D3C00D /* SemanaParse.swift in Sources */,
 				1BA867BD1C19DC020095C3AB /* AgregarSemanaViewController.swift in Sources */,
 				1BC58B201C1CEDF4003B1487 /* RegisterPageViewController.swift in Sources */,
+				1BE29ACC1C1E0E4300764098 /* HttpConnection.swift in Sources */,
 				1BAE84AA1C1C81DF00B4789A /* TrabajadorTableViewCell.swift in Sources */,
 				1BAE84A81C1C818100B4789A /* VerTrabajadorViewController.swift in Sources */,
 				1BC58B221C1CF0D9003B1487 /* LoginViewController.swift in Sources */,
@@ -329,6 +348,7 @@
 				1B32866B1C18741600D3C00D /* VerSemanaViewController.swift in Sources */,
 				1B4B66E41C162F3800247198 /* AppDelegate.swift in Sources */,
 				1BC58B1E1C1CE5F6003B1487 /* MapViewController.swift in Sources */,
+				1BE29ACE1C1E0F5700764098 /* ClimaViewController.swift in Sources */,
 				1B3C3FC01C1B136A0038C48A /* TrabajadorParse.swift in Sources */,
 				1B4B67141C16442200247198 /* Trabajador.swift in Sources */,
 				1B3C3FBE1C1B13520038C48A /* InsumoParse.swift in Sources */,
