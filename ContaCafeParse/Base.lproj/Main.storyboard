@@ -618,10 +618,10 @@
             </objects>
             <point key="canvasLocation" x="-313.5" y="-22"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Page View Controller-->
         <scene sceneID="BD2-Qu-U5N">
             <objects>
-                <viewController id="CFB-Em-qwe" sceneMemberID="viewController">
+                <viewController id="CFB-Em-qwe" customClass="RegisterPageViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KMd-f6-U2C"/>
                         <viewControllerLayoutGuide type="bottom" id="ozO-es-vOP"/>
@@ -677,15 +677,6 @@
                                     <rect key="frame" x="20" y="188" width="360" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 Mayuscula, 1 Numero, 5 Caracteres" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zpB-OH-0A8">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="264" width="360" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpm-6e-sTv">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -695,7 +686,19 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="328" width="360" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="CFB-Em-qwe" eventType="touchUpInside" id="y7p-6I-sGQ"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 Mayuscula, 1 Numero, 5 Caracteres" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zpB-OH-0A8">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="264" width="360" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -706,8 +709,8 @@
                                 <exclude reference="bAC-GH-NUz"/>
                                 <exclude reference="Vwk-Kt-zC2"/>
                                 <exclude reference="Hvw-Dx-yjB"/>
-                                <exclude reference="zpB-OH-0A8"/>
                                 <exclude reference="Wpm-6e-sTv"/>
+                                <exclude reference="zpB-OH-0A8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -717,11 +720,16 @@
                                 <include reference="bAC-GH-NUz"/>
                                 <include reference="Vwk-Kt-zC2"/>
                                 <include reference="Hvw-Dx-yjB"/>
-                                <include reference="zpB-OH-0A8"/>
                                 <include reference="Wpm-6e-sTv"/>
+                                <include reference="zpB-OH-0A8"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="repeatPasswordTextField" destination="zpB-OH-0A8" id="AwC-ek-gAM"/>
+                        <outlet property="userEmailTextField" destination="Vwk-Kt-zC2" id="dgO-ll-YwJ"/>
+                        <outlet property="userPasswordTextField" destination="Hvw-Dx-yjB" id="eMI-uO-p1f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WN2-RX-T29" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
