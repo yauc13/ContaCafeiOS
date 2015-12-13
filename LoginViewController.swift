@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+   
     
     @IBAction func loginButtonTapped(sender: AnyObject) {
         
@@ -42,9 +42,8 @@ class LoginViewController: UIViewController {
         }
     }
 
-    
-
-    /*
+   
+       /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
