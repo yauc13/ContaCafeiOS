@@ -7,35 +7,37 @@
 //
 
 import UIKit
+import MapKit
 import Parse
 
-
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let testObject = PFObject(className: "Trabajador")
-//        testObject["nombre"] = "Yeison Urrea"
-//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-//            print("Object has been saved.")
-//        }
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     override func viewDidAppear(animated: Bool) {
         
-        
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        if(!isUserLoggedIn){
             self.performSegueWithIdentifier("loginView", sender: self);
             
-        
+        }
         
     }
-
+    
+    @IBAction func logoutButtontapped(sender: AnyObject) {
+        
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isUserLoggedIn");
+        NSUserDefaults.standardUserDefaults().synchronize();
+        self.performSegueWithIdentifier("loginView", sender: self);
+    }
 }
+
 

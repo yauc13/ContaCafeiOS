@@ -505,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="154.5" y="-825"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="UHF-Zh-c2R">
             <objects>
-                <viewController id="Sfj-6j-PCe" sceneMemberID="viewController">
+                <viewController id="Sfj-6j-PCe" customClass="LoginViewController" customModule="ContaCafeParse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vjw-Ui-0M2"/>
                         <viewControllerLayoutGuide type="bottom" id="6Ev-kW-5IY"/>
@@ -554,6 +554,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="344" width="360" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Sfj-6j-PCe" eventType="touchUpInside" id="Amo-Ci-JLy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fL-je-D5h">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -613,6 +616,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="dQN-kv-6HW" id="waI-TH-Du3"/>
+                        <outlet property="userPasswordTextField" destination="b6F-D0-Lnm" id="9J5-Rl-IOD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSs-xc-MFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

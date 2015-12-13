@@ -40,6 +40,7 @@
 		1BAE84AA1C1C81DF00B4789A /* TrabajadorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE84A91C1C81DF00B4789A /* TrabajadorTableViewCell.swift */; };
 		1BC58B1E1C1CE5F6003B1487 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC58B1D1C1CE5F6003B1487 /* MapViewController.swift */; };
 		1BC58B201C1CEDF4003B1487 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC58B1F1C1CEDF4003B1487 /* RegisterPageViewController.swift */; };
+		1BC58B221C1CF0D9003B1487 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC58B211C1CF0D9003B1487 /* LoginViewController.swift */; };
 		1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */; };
 		1BE814E01C1A3425009BCDBC /* InsumoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */; };
 		1BE814E21C1A384F009BCDBC /* Insumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE814E11C1A384F009BCDBC /* Insumo.swift */; };
@@ -81,6 +82,7 @@
 		1BAE84A91C1C81DF00B4789A /* TrabajadorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrabajadorTableViewCell.swift; sourceTree = "<group>"; };
 		1BC58B1D1C1CE5F6003B1487 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1BC58B1F1C1CEDF4003B1487 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		1BC58B211C1CF0D9003B1487 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BE814DD1C1A3113009BCDBC /* VerInsumoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerInsumoViewController.swift; sourceTree = "<group>"; };
 		1BE814DF1C1A3425009BCDBC /* InsumoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsumoTableViewCell.swift; sourceTree = "<group>"; };
 		1BE814E11C1A384F009BCDBC /* Insumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insumo.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		1B4B66D71C162F3800247198 = {
 			isa = PBXGroup;
 			children = (
+				1BC58B211C1CF0D9003B1487 /* LoginViewController.swift */,
 				1BC58B1F1C1CEDF4003B1487 /* RegisterPageViewController.swift */,
 				1BC58B1D1C1CE5F6003B1487 /* MapViewController.swift */,
 				1B3286711C1895CD00D3C00D /* Parse */,
@@ -282,6 +285,7 @@
 				1BC58B201C1CEDF4003B1487 /* RegisterPageViewController.swift in Sources */,
 				1BAE84AA1C1C81DF00B4789A /* TrabajadorTableViewCell.swift in Sources */,
 				1BAE84A81C1C818100B4789A /* VerTrabajadorViewController.swift in Sources */,
+				1BC58B221C1CF0D9003B1487 /* LoginViewController.swift in Sources */,
 				1BE814DE1C1A3113009BCDBC /* VerInsumoViewController.swift in Sources */,
 				1B3286701C18877100D3C00D /* SemanaTableViewCell.swift in Sources */,
 				1B509EE31C1CCAF9005160A1 /* AgregarTrabajadorViewController.swift in Sources */,
