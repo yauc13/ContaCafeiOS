@@ -23,12 +23,9 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
         
     
 
-        data = []
-        
-     semanaParse.getAllSemana(self)
-//        var nom:String!
-//        nom = data[0].nombreSemana
-//        print(nom)
+        //data = []
+     //semanaParse.getAllSemana(self)
+
 
         // Do any additional setup after loading the view.
     }
@@ -36,6 +33,8 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        data = []
+        semanaParse.getAllSemana(self)
         
     }
 

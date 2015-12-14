@@ -16,14 +16,14 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
    
     var idSemaView:String!
     var data:[Trabajador]!
+    let trabajadorParse:TrabajadorParse = TrabajadorParse()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let trabajadorParse:TrabajadorParse = TrabajadorParse()
         
-        data = []
         
-        trabajadorParse.getAllTrabajador(self)
+        //data = []
+        //trabajadorParse.getAllTrabajador(self)
 
 
         // Do any additional setup after loading the view.
@@ -31,8 +31,20 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        data = []
+        
+        trabajadorParse.getAllTrabajador(self)
+
+        //TablaInsumo.reloadData()
+    }
+    
+    
     
     
     // acciones de los botones
@@ -71,6 +83,26 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
             nextTrabajador.idSemanaAgregar = self.idSemaView
             //nextInsumo.list = self
         }
+        
+        
+    }
+    
+    func showDeleteTrabajador(){
+        let s:Trabajador = data[(TablaTrabajador.indexPathForSelectedRow?.row)!]
+        let alert:UIAlertController = UIAlertController(title: "Eliminar Trabajador", message: "Desea Eliminar el Trabajador \(s.nombreTrabajador)", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let actionOk:UIAlertAction = UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
+            self.data.removeAtIndex((self.TablaTrabajador.indexPathForSelectedRow?.row)!)
+            self.trabajadorParse.deleteSemana(s)
+            self.TablaTrabajador.reloadData()
+        }
+        
+        let actionCancel:UIAlertAction = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Default, handler: nil)
+        
+        alert.addAction(actionOk)
+        alert.addAction(actionCancel)
+        
+        presentViewController(alert, animated: true, completion: nil)
         
         
     }

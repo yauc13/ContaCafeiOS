@@ -39,13 +39,7 @@ class AgregarSemanaViewController: UIViewController {
     }
     
     
-    @IBAction func insertarSemana(sender: AnyObject) {
-        let semanaParse:SemanaParse = SemanaParse()
-        var semana:Semana = Semana()
-        semana.nombreSemana = nombreSemana.text
-        semanaParse.insertSemana(semana)
-        
-    }
+   
     
     
     
@@ -61,20 +55,20 @@ class AgregarSemanaViewController: UIViewController {
             //actualizar semana
             list.data[pos!].nombreSemana = nombreSemana.text
             semanaParse.updateSemana(list.data[pos!])
-            
+            self.navigationController?.popToViewController(list, animated: true)
         }else{
             //crear nuevo
             
             var semana:Semana = Semana()
             semana.nombreSemana = nombreSemana.text
             semanaParse.insertSemana(semana)
-            
+            self.navigationController?.popToRootViewControllerAnimated(true)
            
         }
         
         
         
-        self.navigationController?.popToRootViewControllerAnimated(true)
+       // self.navigationController?.popToRootViewControllerAnimated(true)
     }
 
     /*

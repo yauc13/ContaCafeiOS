@@ -76,6 +76,7 @@ class AgregarTrabajadorViewController: UIViewController {
             list.data[pos!].ksa = Int(ksa.text!)
             list.data[pos!].kdo = Int(kdo.text!)
             trabajadorParse.updateTrabajador(list.data[pos!])
+            self.navigationController?.popToViewController(list, animated: true)
         }else{
             //crear nuevo
             
@@ -90,10 +91,11 @@ class AgregarTrabajadorViewController: UIViewController {
             trabajador.kdo = Int(kdo.text!)
             trabajador.idSemana = idSemanaAgregar
             trabajadorParse.insertTrabajador(trabajador)
-            
+            self.navigationController?.popToRootViewControllerAnimated(true)
             
         }
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        
+        //self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
     
