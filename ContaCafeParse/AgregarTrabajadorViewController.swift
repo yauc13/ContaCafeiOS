@@ -91,8 +91,7 @@ class AgregarTrabajadorViewController: UIViewController {
             trabajador.kdo = Int(kdo.text!)
             trabajador.idSemana = idSemanaAgregar
             trabajadorParse.insertTrabajador(trabajador)
-            self.navigationController?.popToRootViewControllerAnimated(true)
-            
+           self.navigationController?.popToViewController(list, animated: true)            
         }
         
         //self.navigationController?.popToRootViewControllerAnimated(true)

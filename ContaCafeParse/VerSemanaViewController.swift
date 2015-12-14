@@ -125,6 +125,10 @@ class VerSemanaViewController: UIViewController, UITableViewDataSource {
             let idSe:String! = data[pos!].idSemana
             nextTrabajador.idSemaView = idSe
             //nextInsumo.list = self
+        }else if(segue.identifier == "add"){
+            let nextInsumo:AgregarSemanaViewController = segue.destinationViewController as! AgregarSemanaViewController
+            //nextInsumo.pos = TablaSemana.indexPathForSelectedRow?.row
+            nextInsumo.list = self
         }
     }
     

@@ -91,6 +91,7 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
         }else if(segue.identifier == "add"){
             let nextTrabajador:AgregarTrabajadorViewController = segue.destinationViewController as! AgregarTrabajadorViewController
             nextTrabajador.idSemanaAgregar = self.idSemaView
+            nextTrabajador.list = self
             //nextInsumo.list = self
         }
         

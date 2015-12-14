@@ -62,8 +62,9 @@ class AgregarSemanaViewController: UIViewController {
             var semana:Semana = Semana()
             semana.nombreSemana = nombreSemana.text
             semanaParse.insertSemana(semana)
-            self.navigationController?.popToRootViewControllerAnimated(true)
+            //self.navigationController?.popToRootViewControllerAnimated(true)
            
+            self.navigationController?.popToViewController(list, animated: true)
         }
         
         

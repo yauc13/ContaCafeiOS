@@ -2429,7 +2429,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Semana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYM-LF-9zH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Semana" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYM-LF-9zH">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -2437,6 +2437,18 @@
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" misplaced="YES">
                                                         <rect key="frame" x="8" y="12" width="224" height="22"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-d6-ATK" userLabel=".">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="0.0" y="42" width="350" height="4"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
@@ -2454,6 +2466,7 @@
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="XYM-LF-9zH"/>
+                                                    <exclude reference="S5t-d6-ATK"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="3zD-Fw-dUP"/>
@@ -2467,6 +2480,7 @@
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="XYM-LF-9zH"/>
+                                                    <include reference="S5t-d6-ATK"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <include reference="3zD-Fw-dUP"/>
@@ -3197,7 +3211,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="RFa-uh-pY8"/>
         <segue reference="Qx2-Df-odH"/>
-        <segue reference="eJX-Mz-oZ1"/>
+        <segue reference="9JP-Ox-nvw"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
