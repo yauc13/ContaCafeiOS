@@ -2605,7 +2605,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="6qH-1v-K0A"/>
-                                    <barButtonItem title="Eliminar" id="1gg-Nf-Z0a"/>
+                                    <barButtonItem title="Eliminar" id="1gg-Nf-Z0a">
+                                        <connections>
+                                            <action selector="eliminarTrabajador:" destination="5R6-8Y-REf" id="yby-Ra-9Ca"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n5y-nb-bGY">

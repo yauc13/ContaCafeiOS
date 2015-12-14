@@ -83,7 +83,7 @@ struct TrabajadorParse {
     }
     
     
-    func deleteSemana(trabajador:Trabajador){
+    func deleteTrabajador(trabajador:Trabajador){
         
         let query = PFQuery(className:CLASS)
         query.getObjectInBackgroundWithId(trabajador.idTrabajador) { (parseObject: PFObject?, error: NSError?) -> Void in

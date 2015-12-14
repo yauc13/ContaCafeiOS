@@ -26,10 +26,12 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
         //trabajadorParse.getAllTrabajador(self)
 
 
+       
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
         
         // Dispose of any resources that can be recreated.
@@ -55,6 +57,14 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
             self.showUnSelectedMessage("Editar Trabajador")
         }else{
             performSegueWithIdentifier("edit", sender: nil)
+        }
+    }
+    
+    @IBAction func eliminarTrabajador(sender: AnyObject) {
+        if(TablaTrabajador.indexPathForSelectedRow == nil){
+            self.showUnSelectedMessage("Eliminar Trabajador")
+        }else{
+            showDeleteTrabajador()
         }
     }
     
@@ -93,7 +103,7 @@ class VerTrabajadorViewController: UIViewController, UITableViewDataSource {
         
         let actionOk:UIAlertAction = UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
             self.data.removeAtIndex((self.TablaTrabajador.indexPathForSelectedRow?.row)!)
-            self.trabajadorParse.deleteSemana(s)
+            self.trabajadorParse.deleteTrabajador(s)
             self.TablaTrabajador.reloadData()
         }
         
